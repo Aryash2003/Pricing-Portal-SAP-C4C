@@ -1,0 +1,71 @@
+﻿import AP.Common.GDT as apCommonGDT;
+import AP.FO.BusinessPartner.Global as bp;
+[WithAdministrativeData]
+[ChangeHistory]
+businessobject Pricing_Portal raises Warn, Error, XYZ, dates, combination_text, material_missing, shipping_cond_data, cust_cond_data, incoterm_data, quantity_zero, price_amount_neg, soldto, ship_to, sales_org_msg, end_date_msg{
+        message Warn  text "Fill all the necessary Organizational fields and Key Primary Fields";
+        message Error text "Error is there";
+        message XYZ   text "Oh Nooooooooooooooooooo!!";
+        message dates text "Start date must be before end date";
+        message combination_text text "Please add the combination that you require";
+        message material_missing    text "A Material ID is required.";
+        message shipping_cond_data  text "Shipping Condition Data required.";
+        message cust_cond_data      text "Customer Condition Group Data is required.";
+        message incoterm_data       text "Incoterm Data is requiered.";
+        message quantity_zero       text "Quantity must be greater than zero for a pricing record to be active.";
+        message price_amount_neg    text "Enter a valid positive monetary value greater than 0.";
+        message soldto              text "Sold-To Party is required.";
+        message ship_to             text "shipto Party is required";
+        message sales_org_msg       text "  Please fill the sales organization.";
+        message end_date_msg        text "Please fill the end date"; 
+        
+        [Label("Pricing ID")] [AlternativeKey]
+        element PricingID : ID;
+        [Label("Combination Type")]  element Combination     : KeyCombinationCode;
+        [Label("Combination_Data")]  element combination_data : LANGUAGEINDEPENDENT_ENCRYPTED_MEDIUM_Description;
+        [Label("Status")]            element Status          : StatusCode;
+        [Label("Type")]              element Dummy_Date            : Date;
+        [Label("Status_Data")]       element Status_Data            : LANGUAGEINDEPENDENT_ENCRYPTED_MEDIUM_Description;
+        [Label("Account Manager")]   element AccountManager  : EmployeeID;
+        [Label("Manager")]           element Manager         : EmployeeID;
+        [Label("Employee ID")] element Emp_UUID : UUID; 
+        [Label("Requester")]         element Requester       : EmployeeID;
+        [Label("Primary Approver")]  element Primary_Approver: EmployeeID;
+
+        [Label("Start Date")]        element StartDate       : Date;
+        [Label("End Date")]          element EndDate         : Date;
+        [Label("Duration")]          element Duration        : NumberValue;
+
+        [Label("Sales Organization")] element SalesOrganization : OrganisationalCentreID;
+
+        [Label("Sold-To Party")]     element SoldToPartyID   : ID;
+
+        [Label("Ship-To Party")]     element ShipToPartyID   : ID;
+        [Label("Material")]          element MaterialID              : ID;
+        [Label("Shipping Condition")] element ShippingCondition      : ShippingConditionCode;
+        [Label("SC_Data")]           element SC_Data       : LANGUAGEINDEPENDENT_ENCRYPTED_MEDIUM_Description; 
+        [Label("Customer Condition Group")] element CustomerConditionGroup : CustomerConditionCode;
+        [Label("CC_Data")]           element CC_Data     :  LANGUAGEINDEPENDENT_ENCRYPTED_MEDIUM_Description;
+        [Label("Incoterm")]          element Incoterm    : IncotermCode;
+        [Label("Incoterm_Data")]     element Incotem_data : LANGUAGEINDEPENDENT_ENCRYPTED_MEDIUM_Description; 
+        [Label("Quantity")]          element Quantity    : Quantity;
+        [Label("Price Amount")]      element PriceAmount : Amount;
+
+        [Label("Approval_Data")]     element ApprovalData : LANGUAGEINDEPENDENT_ENCRYPTED_MEDIUM_Description;
+        node InvolvedParties [0,n] {
+            [Label("Party ID")]          element PartyID         : EmployeeID;
+            [Label("Party_UUID")]         element Party_UUID      : UUID;
+            [Label("Role Code")]         element RoleCode        : PartyRoleCode;
+            [Label("Street")]            element Street          : LANGUAGEINDEPENDENT_LONG_Name;
+            [Label("City")]              element City            : LANGUAGEINDEPENDENT_LONG_Name;
+            [Label("Postal Code")]       element PostalCode      : PostalCode;
+            [Label("Country Code")]      element CountryCode     : CountryCode;
+            [Label("Email")]             element Email           : ENCRYPTED_MEDIUM_EmailURI;
+            [Label("Is Active")]         element IsActive        : Indicator;
+            [Label("Main Contact ID")]   element MainContactID   : ID;
+        }
+        [DependentObject(AttachmentFolder)] node CaseAttachmentFolder;
+        action updatelogs;
+        action codeupdate;
+        action bomboclat;
+}

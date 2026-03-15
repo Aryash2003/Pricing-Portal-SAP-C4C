@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FormTemplateHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" FormName="Pricing_PortalForm" xmlns="http://byd.sap.com/PDI/FormTemplates">
+  <Variants>
+    <FormVariant Language="EN" Country="">
+      <ID>Pricing_PortalForm__EN</ID>
+      <Title>default</Title>
+    </FormVariant>
+  </Variants>
+  <FormID>c1389782-b298-4a02-9723-785e981f2567</FormID>
+  <FormCode>YTFS8S0T_PDKTP</FormCode>
+  <Description>All the fields will be displayed with approprialte data fields</Description>
+  <ReferenceBO ESRName="Pricing_Portal">
+    <ProxyName>YTFS8S0TY_PRALDC5C7D903D295205</ProxyName>
+    <Namespace>http://refsystems.sap.com/YTFS8S0TY_</Namespace>
+  </ReferenceBO>
+  <GroupCode>YTFS8S0TY_PKS</GroupCode>
+  <EnableFrontEnd>true</EnableFrontEnd>
+  <IsSensitive>false</IsSensitive>
+  <FMTName>Pricing_PortalForm</FMTName>
+  <Mapping>&lt;?xml version="1.0"?&gt;
+&lt;sadl:definition
+        xmlns:sadl="http://sap.com/sap.nw.f.sadl"
+        xmlns:ass="http://sap.com/sap.nw.f.sadl/association" 
+        date="20260313" time="233109" uuid="EEBA99AEE1A34665B16620EF344A8E19"&gt;
+  &lt;sadl:conversions&gt;
+    &lt;sadl:conversion type="ALPHA"/&gt;
+  &lt;/sadl:conversions&gt;
+  &lt;sadl:dataSource name="DS" binding="YTFS8S0TY_PRALDC5C7D903D295205/ass:ROOT4F903855210031B0" type="BusinessObjectNode" /&gt;
+  &lt;sadl:resultSet&gt;
+    &lt;sadl:structure   name="YTFS8S0TY_PRALDC5C7D903D295205"               dataSource="DS" &gt;
+    &lt;sadl:attribute   name="PRICINGID762591BF8685DA8A"               binding="PRICINGID762591BF8685DA8A" /&gt;
+    &lt;sadl:attribute   name="COMBINATIOND81A1DD0AD18B6FE"               binding="COMBINATIOND81A1DD0AD18B6FE" /&gt;
+    &lt;sadl:attribute   name="COMBIN_DATA6AAEE029378EB8BB"               binding="COMBIN_DATA6AAEE029378EB8BB" /&gt;
+    &lt;sadl:attribute   name="STATUS34D1F8B638EC376B"               binding="STATUS34D1F8B638EC376B" /&gt;
+    &lt;sadl:attribute   name="STATUS_DATA6D10BA798271548A"               binding="STATUS_DATA6D10BA798271548A" /&gt;
+    &lt;sadl:attribute   name="ACCOUNNAGER9345ED4F332E552E"               binding="ACCOUNNAGER9345ED4F332E552E" /&gt;
+    &lt;sadl:attribute   name="MANAGERACCC3ABD4B8242D2"               binding="MANAGERACCC3ABD4B8242D2" /&gt;
+    &lt;sadl:attribute   name="EMP_UUID78D53D24EFEEDEE3"               binding="EMP_UUID78D53D24EFEEDEE3" /&gt;
+    &lt;sadl:attribute   name="STARTDATEDF215720919915B3"               binding="STARTDATEDF215720919915B3" /&gt;
+    &lt;sadl:attribute   name="ENDDATEE759613219F8D987"               binding="ENDDATEE759613219F8D987" /&gt;
+    &lt;sadl:attribute   name="DURATION3F0641CD15FA0791"               binding="DURATION3F0641CD15FA0791" /&gt;
+    &lt;sadl:attribute   name="REQUESTER034470E2BA496B5B"               binding="REQUESTER034470E2BA496B5B" /&gt;
+    &lt;sadl:attribute   name="SALESOATION19E8D00170600F75"               binding="SALESOATION19E8D00170600F75" /&gt;
+    &lt;sadl:attribute   name="SOLDTORTYIDC20489E2ED9E194B"               binding="SOLDTORTYIDC20489E2ED9E194B" /&gt;
+    &lt;sadl:attribute   name="SHIPTORTYIDD055AF0619FA828B"               binding="SHIPTORTYIDD055AF0619FA828B" /&gt;
+    &lt;sadl:attribute   name="MATERIALIDAA0BD3506BE2C13C"               binding="MATERIALIDAA0BD3506BE2C13C" /&gt;
+    &lt;sadl:attribute   name="SHIPPIITION215412BFA0C69E89"               binding="SHIPPIITION215412BFA0C69E89" /&gt;
+    &lt;sadl:attribute   name="PRIMARROVER84182F35AE5B88DD"               binding="PRIMARROVER84182F35AE5B88DD" /&gt;
+    &lt;sadl:attribute   name="SC_DATA86D0792FE075AB27"               binding="SC_DATA86D0792FE075AB27" /&gt;
+    &lt;sadl:attribute   name="CUSTOMGROUPD1834184DB114EDC"               binding="CUSTOMGROUPD1834184DB114EDC" /&gt;
+    &lt;sadl:attribute   name="CC_DATAD4DF0195F29BEA69"               binding="CC_DATAD4DF0195F29BEA69" /&gt;
+    &lt;sadl:attribute   name="INCOTERMA4941887066D1F67"               binding="INCOTERMA4941887066D1F67" /&gt;
+    &lt;sadl:attribute   name="INCOTE_DATA661892E6D90011CC"               binding="INCOTE_DATA661892E6D90011CC" /&gt;
+    &lt;sadl:attribute   name="QUANTITYE7AA05A2EA787B8A"               binding="QUANTITYE7AA05A2EA787B8A" /&gt;
+    &lt;sadl:attribute   name="PRICEAMOUNT039F150A69372123"               binding="PRICEAMOUNT039F150A69372123" /&gt;
+    &lt;sadl:attribute   name="APPROVTATUS9900975A41E335F8"               binding="APPROVTATUS9900975A41E335F8" /&gt;
+    &lt;sadl:attribute   name="APPROVLDATA91B8B248088FB71A"               binding="APPROVLDATA91B8B248088FB71A" /&gt;
+    &lt;sadl:attribute   name="SAP_SYEDATAAF54AFE70C7CAE6F"               binding="SAP_SYEDATAAF54AFE70C7CAE6F" /&gt;
+      &lt;sadl:structure   name="INVOLVRTIESED22D6067ED3EABE"               binding="ass:INVOLVRTIESED22D6067ED3EABE" &gt;
+    &lt;sadl:attribute   name="PARTYID9BFF61F7D2F238B9"               binding="PARTYID9BFF61F7D2F238B9" /&gt;
+    &lt;sadl:attribute   name="ROLECODEC4C2E314B676492F"               binding="ROLECODEC4C2E314B676492F" /&gt;
+    &lt;sadl:attribute   name="PARTY_UUID0518BAC050CA56B4"               binding="PARTY_UUID0518BAC050CA56B4" /&gt;
+    &lt;sadl:attribute   name="STREET143AE83150514132"               binding="STREET143AE83150514132" /&gt;
+    &lt;sadl:attribute   name="CITY6167D1712377731C"               binding="CITY6167D1712377731C" /&gt;
+    &lt;sadl:attribute   name="POSTALCODE2927BF343D64B3FB"               binding="POSTALCODE2927BF343D64B3FB" /&gt;
+    &lt;sadl:attribute   name="COUNTRYCODE3F76AAF1F8FA1DBF"               binding="COUNTRYCODE3F76AAF1F8FA1DBF" /&gt;
+    &lt;sadl:attribute   name="EMAIL11A3C08E61E62FEE"               binding="EMAIL11A3C08E61E62FEE" /&gt;
+    &lt;sadl:attribute   name="ISACTIVEA5115C932183FFA1"               binding="ISACTIVEA5115C932183FFA1" /&gt;
+    &lt;sadl:attribute   name="MAINCOACTIDF8C6C6EF454E50F7"               binding="MAINCOACTIDF8C6C6EF454E50F7" /&gt;
+      &lt;/sadl:structure &gt;
+    &lt;/sadl:structure &gt;
+  &lt;/sadl:resultSet&gt;
+&lt;/sadl:definition&gt;
+</Mapping>
+</FormTemplateHeader>

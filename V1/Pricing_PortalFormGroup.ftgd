@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FormTemplateGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Title="Pricing_Portal Form Group" BusinessArea="PDI" GroupCode="YTFS8S0TY_PKS">
+  <ReferenceBO ESRName="Pricing_Portal">
+    <ProxyName>YTFS8S0TY_PRALDC5C7D903D295205</ProxyName>
+    <Namespace>http://refsystems.sap.com/YTFS8S0TY_</Namespace>
+  </ReferenceBO>
+  <BackendPrinting>false</BackendPrinting>
+</FormTemplateGroup>

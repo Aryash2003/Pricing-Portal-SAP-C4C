@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sadl:definition xmlns:ass="http://sap.com/sap.nw.f.sadl/association" date="20260309" time="164843" uuid="3D58E0709C454CD9B555FB0F6AD7C716" xmlns:sadl="http://sap.com/sap.nw.f.sadl">
+  <sadl:conversions>
+    <sadl:conversion type="ALPHA" />
+  </sadl:conversions>
+  <sadl:modes>
+    <sadl:mode type="QUERY" />
+  </sadl:modes>
+  <sadl:dataSource name="DS" binding="YTFS8S0TY_PRALDC5C7D903D295205/ass:ROOT4F903855210031B0" type="BusinessObjectNode" d2p1:mdrsBinding="Pricing_Portal.Root" xmlns:d2p1="http://sap.com/xi/AP/PDI" />
+  <sadl:resultSet>
+    <sadl:structure name="YTFS8S0TY_PRALDC5C7D903D295205" dataSource="DS" d3p1:mdrsName="Pricing_Portal.Root" xmlns:d3p1="http://sap.com/xi/AP/PDI">
+      <sadl:attribute name="YTFS8S0TY_PROTED718CEC70B27308" binding="PRICEAMOUNT039F150A69372123-CURRENCY_CODE" d3p1:mdrsName="PriceAmount/currencyCode" />
+      <sadl:attribute name="YTFS8S0TY_PROT4539114A707EAF0C" binding="PRICEAMOUNT039F150A69372123-CONTENT" d3p1:mdrsName="PriceAmount/content" />
+    </sadl:structure>
+  </sadl:resultSet>
+  <sadl:query bo="YTFS8S0TY_PRALDC5C7D903D295205" name="QUERY_BY_ELEMENTS" node="DURATICHECK6D8E757AF9ED31E1" type="ESI_QUERY">
+    <sadl:inputStructure>
+      <sadl:inputParameter name="PRICEAROOT0030CCF38574E2AF-CURRENCY_CODE">
+        <sadl:attribute binding="YTFS8S0TY_PROTED718CEC70B27308" />
+      </sadl:inputParameter>
+      <sadl:inputParameter name="PRICEAROOT0030CCF38574E2AF-CONTENT">
+        <sadl:attribute binding="YTFS8S0TY_PROT4539114A707EAF0C" />
+      </sadl:inputParameter>
+    </sadl:inputStructure>
+    <sadl:outputStructure>
+      <sadl:attribute name="PRICEAROOT0030CCF38574E2AF-CURRENCY_CODE" binding="YTFS8S0TY_PROTED718CEC70B27308" />
+      <sadl:attribute name="PRICEAROOT0030CCF38574E2AF-CONTENT" binding="YTFS8S0TY_PROT4539114A707EAF0C" />
+    </sadl:outputStructure>
+  </sadl:query>
+</sadl:definition>

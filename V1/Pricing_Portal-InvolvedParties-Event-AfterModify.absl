@@ -1,0 +1,43 @@
+﻿/*
+	Add your SAP Business ByDesign scripting language implementation for:
+		Business Object: Pricing_Portal
+		Node: InvolvedParties
+		Event: AfterModify 
+		
+	Note: 
+	  - To access the elements of the business object node, 
+	    use path expressions, for example, this.<element name>. 
+	  - To use code completion, press CTRL+J. 
+	  - The solution uses this script if:
+		- the value of any field in the node in which this script is contained is modified.
+		- the node itself is modified by another business object within the same solution.
+*/
+
+import ABSL;
+
+import AP.Common.GDT;
+import BASIS.Global;
+import AP.CRM.Global;
+import AP.FO.MOM.Global;
+import AP.FO.Product.Global;
+import AP.FO.ProductDataMaintenance.Global;
+import AP.FO.BusinessPartner.Global;
+
+var EmployeeQuery = Employee.Identification.QueryByEmployeeAttributes;
+var selectionparm101 = EmployeeQuery.CreateSelectionParams();
+selectionparm101.Add(EmployeeQuery.EmployeeID.content, "I", "EQ", this.PartyID.content);
+var queryResults101 = EmployeeQuery.Execute(selectionparm101);
+var entry = queryResults101.GetFirst();
+if (entry.IsSet()) {
+		var instEmployee_Root = entry.ToRoot;
+		this.PartyID.content= instEmployee_Root.CurrentCommon.BusinessPartnerFormattedName;
+		this.Party_UUID = instEmployee_Root.UUID;
+}
+var salesOrgID = this.MainContactID;
+var orgUnit = OrganisationalUnit.Retrieve(salesOrgID);
+if (orgUnit.IsSet()) {
+    var orgName = orgUnit.CurrentNameAndAddress.Name;
+    if (orgName.Length()>0) {
+        this.MainContactID = orgName;
+    }
+}

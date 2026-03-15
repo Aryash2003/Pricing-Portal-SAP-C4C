@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Pricing_PortalForm" ><xs:complexType><xs:sequence>
+    <xs:element name="Pricing_Portal" ><xs:complexType><xs:sequence>
+    <xs:element   name="PricingID"    type="ID" />
+    <xs:element   name="Combination"    type="KeyCombinationCode" />
+    <xs:element   name="combination_data"    type="LANGUAGEINDEPENDENT_ENCRYPTED_MEDIUM_Description" />
+    <xs:element   name="Status"    type="StatusCode" />
+    <xs:element   name="Status_Data"    type="LANGUAGEINDEPENDENT_ENCRYPTED_MEDIUM_Description" />
+    <xs:element   name="AccountManager"    type="EmployeeID" />
+    <xs:element   name="Manager"    type="EmployeeID" />
+    <xs:element   name="Emp_UUID"    type="UUID" />
+    <xs:element   name="StartDate"    type="Date" />
+    <xs:element   name="EndDate"    type="Date" />
+    <xs:element   name="Duration"    type="NumberValue" />
+    <xs:element   name="Requester"    type="EmployeeID" />
+    <xs:element   name="SalesOrganization"    type="OrganisationalCentreID" />
+    <xs:element   name="SoldToPartyID"    type="ID" />
+    <xs:element   name="ShipToPartyID"    type="ID" />
+    <xs:element   name="MaterialID"    type="ID" />
+    <xs:element   name="ShippingCondition"    type="ShippingConditionCode" />
+    <xs:element   name="Primary_Approver"    type="EmployeeID" />
+    <xs:element   name="SC_Data"    type="LANGUAGEINDEPENDENT_ENCRYPTED_MEDIUM_Description" />
+    <xs:element   name="CustomerConditionGroup"    type="CustomerConditionCode" />
+    <xs:element   name="CC_Data"    type="LANGUAGEINDEPENDENT_ENCRYPTED_MEDIUM_Description" />
+    <xs:element   name="Incoterm"    type="IncotermCode" />
+    <xs:element   name="Incotem_data"    type="LANGUAGEINDEPENDENT_ENCRYPTED_MEDIUM_Description" />
+    <xs:element   name="Quantity"    type="Quantity" />
+    <xs:element   name="PriceAmount"    type="Amount" />
+    <xs:element   name="ApprovalStatus"    type="ApprovalStatusCode" />
+    <xs:element   name="ApprovalData"    type="LANGUAGEINDEPENDENT_ENCRYPTED_MEDIUM_Description" />
+    <xs:element   name="SAP_SystemAdministrativeData"    type="SystemAdministrativeData" />
+      <xs:element name="InvolvedParties"  minOccurs="0"  maxOccurs="unbounded" ><xs:complexType><xs:sequence>
+    <xs:element   name="PartyID"    type="EmployeeID" />
+    <xs:element   name="RoleCode"    type="PartyRoleCode" />
+    <xs:element   name="Party_UUID"    type="UUID" />
+    <xs:element   name="Street"    type="LANGUAGEINDEPENDENT_LONG_Name" />
+    <xs:element   name="City"    type="LANGUAGEINDEPENDENT_LONG_Name" />
+    <xs:element   name="PostalCode"    type="PostalCode" />
+    <xs:element   name="CountryCode"    type="CountryCode" />
+    <xs:element   name="Email"    type="ENCRYPTED_MEDIUM_EmailURI" />
+    <xs:element   name="IsActive"    type="Indicator" />
+    <xs:element   name="MainContactID"    type="ID" />
+      </xs:sequence></xs:complexType></xs:element>
+    </xs:sequence></xs:complexType></xs:element>
+  </xs:sequence></xs:complexType></xs:element>
+  <xs:simpleType name="ID">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:simpleType name="KeyCombinationCode">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:simpleType name="LANGUAGEINDEPENDENT_ENCRYPTED_MEDIUM_Description">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="StatusCode">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="EmployeeID">
+  <xs:simpleContent>
+  <xs:extension base="xs:token">
+      <xs:attribute name="schemeID" type="xs:token"/>
+      <xs:attribute name="schemeAgencyID" type="xs:token"/>
+  </xs:extension>
+  </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="UUID">
+  <xs:simpleContent>
+  <xs:extension base="xs:token">
+      <xs:attribute name="schemeID" type="xs:token"/>
+      <xs:attribute name="schemeAgencyID" type="xs:token"/>
+  </xs:extension>
+  </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="Date">
+    <xs:restriction base="xs:date"/>
+  </xs:simpleType>
+  <xs:simpleType name="NumberValue">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:simpleType name="OrganisationalCentreID">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:simpleType name="ShippingConditionCode">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:simpleType name="CustomerConditionCode">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:simpleType name="IncotermCode">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="Quantity">
+  <xs:simpleContent>
+  <xs:extension base="xs:decimal">
+      <xs:attribute name="unitCode" type="MeasureUnitCode"/>
+  </xs:extension>
+  </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="Amount">
+  <xs:simpleContent>
+  <xs:extension base="xs:decimal">
+      <xs:attribute name="currencyCode" type="CurrencyCode"/>
+  </xs:extension>
+  </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="ApprovalStatusCode">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="SystemAdministrativeData">
+    <xs:sequence>
+      <xs:element name="CreationDateTime" type="GLOBAL_DateTime"/>
+      <xs:element name="CreationIdentityUUID" type="UUID"/>
+      <xs:element name="LastChangeDateTime" type="GLOBAL_DateTime"/>
+      <xs:element name="LastChangeIdentityUUID" type="UUID"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="PartyRoleCode">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:simpleType name="LANGUAGEINDEPENDENT_LONG_Name">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="PostalCode">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:simpleType name="CountryCode">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="ENCRYPTED_MEDIUM_EmailURI">
+  <xs:simpleContent>
+  <xs:extension base="xs:anyURI">
+      <xs:attribute name="schemeID" type="xs:token"/>
+  </xs:extension>
+  </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="Indicator">
+    <xs:restriction base="xs:boolean"/>
+  </xs:simpleType>
+  <xs:simpleType name="MeasureUnitCode">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:simpleType name="CurrencyCode">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:simpleType name="GLOBAL_DateTime">
+    <xs:restriction base="xs:dateTime"/>
+  </xs:simpleType>
+</xs:schema>

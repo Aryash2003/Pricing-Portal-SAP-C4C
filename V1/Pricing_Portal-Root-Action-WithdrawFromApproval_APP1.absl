@@ -1,0 +1,12 @@
+﻿/* 
+Generated scripting language implementation for approval process APP1
+
+	Business Object: Pricing_Portal
+	Node: Root
+	Action: Withdraw From Approval
+
+Note: This implementation can be adjusted if required
+*/
+
+import ABSL; 
+this.Function::Withdraw(); // ApprovalStatus is 7 (Withdrawn)

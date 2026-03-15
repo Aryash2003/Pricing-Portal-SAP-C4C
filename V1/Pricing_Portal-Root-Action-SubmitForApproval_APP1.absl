@@ -1,0 +1,24 @@
+﻿/* 
+Generated scripting language implementation for approval process APP1
+
+	Business Object: Pricing_Portal
+	Node: Root
+	Action: Submit For Approval
+
+Note: This implementation can be adjusted if required
+*/
+
+import ABSL; 
+var result = this.Function::SubmitForApproval();
+/*
+//If required you can add further logic here based on the result of the approval.
+
+if (!result.ApprovalNotNecessary.IsInitial()) // ApprovalStatus is 2 (Approval not Necessary)
+{
+
+}
+if (!result.InApprovalFlag.IsInitial()) // ApprovalStatus is 3 (In Approval)
+{
+
+}
+*/

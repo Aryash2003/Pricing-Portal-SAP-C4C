@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC959CD1-5A2C-4306-BE72-259804B01F08}</ProjectGuid>
+    <ProjectType>CopernicusProject</ProjectType>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>YTFS8S0TY</Name>
+    <RootNamespace>YTFS8S0TY</RootNamespace>
+    <RepositoryNamespace>http://refsystems.sap.com/YTFS8S0TY_</RepositoryNamespace>
+    <RuntimeNamespacePrefix>YTFS8S0TY_</RuntimeNamespacePrefix>
+    <RepositoryRootFolder>/YTFS8S0TY_MAIN</RepositoryRootFolder>
+    <DefaultProcessComponent>YTFS8S0TY_YTFS8S0TY</DefaultProcessComponent>
+    <DevelopmentPackage>$YTFS8S0TY_DEV</DevelopmentPackage>
+    <XRepSolution>YTFS8S0TY_MAIN</XRepSolution>
+    <BCSourceFolderInXRep>/YTFS8S0TY_BC/SRC</BCSourceFolderInXRep>
+    <ProjectSourceFolderinXRep>/YTFS8S0TY_MAIN/SRC</ProjectSourceFolderinXRep>
+    <DeploymentUnit>FOUNDATION</DeploymentUnit>
+    <CompilerVersion>1302_FP15</CompilerVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="V1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pricing_Portal-Root.node">
+      <DependentUpon>V1\Pricing_Portal.bo</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\MassDataRun1.run">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="V1\MassDataRun1_OWL.OWL.uicomponent">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="V1\MassDataRun1_QA.QA.uicomponent">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="V1\MassDataRun1_WCView.WCVIEW.uiwocview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-DurationCheck.qry">
+      <DependentUpon>V1\Pricing_Portal.bo</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-InvolvedParties-Event-AfterLoading.absl">
+      <DependentUpon>V1\Pricing_Portal-InvolvedParties.node</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-InvolvedParties-Event-AfterModify.absl">
+      <DependentUpon>V1\Pricing_Portal-InvolvedParties.node</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-InvolvedParties-Event-BeforeSave.absl">
+      <DependentUpon>V1\Pricing_Portal-InvolvedParties.node</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-InvolvedParties-Validation-OnSave.absl">
+      <DependentUpon>V1\Pricing_Portal-InvolvedParties.node</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-InvolvedParties.node">
+      <DependentUpon>V1\Pricing_Portal.bo</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-Root-Action-Approve_APP1.absl">
+      <DependentUpon>V1\Pricing_Portal-Root.node</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-Root-Action-Approve_APP1.absl" />
+    <Content Include="V1\Pricing_Portal-Root-Action-bomboclat.absl">
+      <DependentUpon>V1\Pricing_Portal-Root.node</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-Root-Action-codeupdate.absl">
+      <DependentUpon>V1\Pricing_Portal-Root.node</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-Root-Action-Reject_APP1.absl">
+      <DependentUpon>V1\Pricing_Portal-Root.node</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-Root-Action-Reject_APP1.absl" />
+    <Content Include="V1\Pricing_Portal-Root-Action-SendBackForRevision_APP1.absl">
+      <DependentUpon>V1\Pricing_Portal-Root.node</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-Root-Action-SendBackForRevision_APP1.absl" />
+    <Content Include="V1\Pricing_Portal-Root-Action-SubmitForApproval_APP1.absl">
+      <DependentUpon>V1\Pricing_Portal-Root.node</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-Root-Action-SubmitForApproval_APP1.absl" />
+    <Content Include="V1\Pricing_Portal-Root-Action-updatelogs.absl">
+      <DependentUpon>V1\Pricing_Portal-Root.node</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-Root-Action-WithdrawFromApproval_APP1.absl">
+      <DependentUpon>V1\Pricing_Portal-Root.node</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-Root-Action-WithdrawFromApproval_APP1.absl" />
+    <Content Include="V1\Pricing_Portal-Root-APP1.QA.uicomponent">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-Root-APP1_NotificationUI.FS.uicomponent">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-Root-APP1_RevisionUI.QA.uicomponent">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-Root-ApprovalStatus.approvalprocess">
+      <DependentUpon>Pricing_Portal-Root.node</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-Root-Event-AfterLoading.absl">
+      <DependentUpon>V1\Pricing_Portal-Root.node</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-Root-Event-AfterModify.absl">
+      <DependentUpon>V1\Pricing_Portal-Root.node</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-Root-Event-BeforeSave.absl">
+      <DependentUpon>V1\Pricing_Portal-Root.node</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-Root-Validation-OnSave.absl">
+      <DependentUpon>V1\Pricing_Portal-Root.node</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal-Root.node">
+      <DependentUpon>V1\Pricing_Portal.bo</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal.bo">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="V1\Pricing_PortalForm.fthd">
+      <DependentUpon>V1\Pricing_PortalFormGroup.ftgd</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_PortalFormGroup.ftgd">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="V1\Pricing_PortalForm__EN.xdp">
+      <DependentUpon>V1\Pricing_PortalForm.fthd</DependentUpon>
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal_OWL.OWL.uicomponent">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal_QC.QC.uicomponent">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal_QT.QT.uicomponent">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal_QV.QV.uicomponent">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal_TI.TI.uicomponent">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal_TT.TT.uidataobject">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal_WCF.WCF.uiwoc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="V1\Pricing_Portal_WCView.WCVIEW.uiwocview">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BCSet Include="..\YTFS8S0TY_BC\V1\CustomerCondition.codelist">
+      <SubType>BCSet</SubType>
+    </BCSet>
+    <BCSet Include="..\YTFS8S0TY_BC\V1\Incoterm.codelist">
+      <SubType>BCSet</SubType>
+    </BCSet>
+    <BCSet Include="..\YTFS8S0TY_BC\V1\KeyCombination.codelist">
+      <SubType>BCSet</SubType>
+    </BCSet>
+    <BCSet Include="..\YTFS8S0TY_BC\V1\ShippingCondition.codelist">
+      <SubType>BCSet</SubType>
+    </BCSet>
+    <BCSet Include="..\YTFS8S0TY_BC\V1\Status.codelist">
+      <SubType>BCSet</SubType>
+    </BCSet>
+    <BCSet Include="..\YTFS8S0TY_BC\V1\Type.codelist">
+      <SubType>BCSet</SubType>
+    </BCSet>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

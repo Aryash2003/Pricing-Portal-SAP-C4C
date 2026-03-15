@@ -1,0 +1,71 @@
+﻿import ABSL;
+var isValid = true;
+
+if (this.Combination.IsInitial()) {
+    raise combination_text.Create("E");
+    isValid = false;
+}
+
+if (this.EndDate.IsInitial()) {
+    raise end_date_msg.Create("E");
+    isValid = false;
+}
+if (this.SalesOrganization.IsInitial()) {
+    raise sales_org_msg.Create("E");
+    isValid = false;
+}
+
+if (this.Quantity.content==0 || this.Quantity.IsInitial()) {
+    raise quantity_zero.Create("E");
+    isValid = false;
+}
+
+if (this.PriceAmount.IsInitial()) {
+    raise price_amount_neg.Create("E");
+    isValid = false;
+}
+
+// 2. Combination field validations
+if (!this.Combination.IsInitial()) {
+    if (this.SoldToPartyID.IsInitial()) {
+        raise soldto.Create("E");
+        isValid = false;
+    }
+    if (this.MaterialID.IsInitial()) {
+        raise material_missing.Create("E");
+        isValid = false;
+    }
+    if (this.ShippingCondition.IsInitial()) {
+        raise shipping_cond_data.Create("E");
+        isValid = false;
+    }
+}
+
+if (this.Combination.EndsWith("5") || this.Combination.EndsWith("6")) {
+    if (this.CustomerConditionGroup.IsInitial()) {
+        raise cust_cond_data.Create("E");
+        isValid = false;
+    }
+}
+
+if (this.Combination.EndsWith("1") || this.Combination.EndsWith("2")) {
+    if (this.Incoterm.IsInitial()) {
+        raise incoterm_data.Create("E");
+        isValid = false;
+    }
+}
+
+if (this.Combination.EndsWith("2") || this.Combination.EndsWith("4") ||
+    this.Combination.EndsWith("5")) {
+    if (this.ShipToPartyID.IsInitial()) {
+        raise ship_to.Create("E");
+        isValid = false;
+    }
+}
+
+if (this.StartDate.GreaterEquals(this.EndDate)) {
+    raise dates.Create("E");
+    isValid = false;
+}
+
+return isValid;

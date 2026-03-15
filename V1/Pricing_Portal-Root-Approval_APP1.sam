@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+
+
+  <businessObjectNode dslVersion="1.0.0.0" Id="26941409-75ef-429a-905e-b3c32580c04c" xmlns="http://schemas.microsoft.com/dsltools/SamEditor">
+    <statusVariables>
+      <statusVariable Id="3110ad03-26fb-4f0d-aafa-3aafc4c03fd3" label="ApprovalStatus" isAgent="false" isPrimary="false" isStateGuarded="false" dataTypeNamespace="http://sap.com/xi/AP/Common/GDT" dataTypeName="ApprovalStatusCode">
+        <statusValues>
+          <statusValue Id="0f48b166-b50f-4301-920b-54184eceb586" label="InApproval" isInhibiting="false" isInitial="false" isStateGuarded="false">
+            <samModelingElements>
+              <samModelingElementReferencesTargetSamModelingElements type="EnablingPreCondition">
+                <actionMoniker Id="a3fcdde3-3ccb-42a1-9d46-5cde84dd794d" />
+              </samModelingElementReferencesTargetSamModelingElements>
+              <samModelingElementReferencesTargetSamModelingElements type="EnablingPreCondition">
+                <actionMoniker Id="f9d01c49-5095-44a2-872b-30242b10f915" />
+              </samModelingElementReferencesTargetSamModelingElements>
+              <samModelingElementReferencesTargetSamModelingElements type="EnablingPreCondition">
+                <actionMoniker Id="1f54957e-d79a-4a00-9149-f3aad6743f68" />
+              </samModelingElementReferencesTargetSamModelingElements>
+              <samModelingElementReferencesTargetSamModelingElements type="EnablingPreCondition">
+                <actionMoniker Id="2887d52a-814f-4aae-ab21-1d92192936d4" />
+              </samModelingElementReferencesTargetSamModelingElements>
+            </samModelingElements>
+          </statusValue>
+          <statusValue Id="66fa7d45-57a4-413b-b083-5339db1f68c9" label="NotStarted" isInhibiting="false" isInitial="true" isStateGuarded="false">
+            <samModelingElements>
+              <samModelingElementReferencesTargetSamModelingElements type="EnablingPreCondition">
+                <actionMoniker Id="bc2a06a0-5bf1-45b7-b1ff-c58fc197fded" />
+              </samModelingElementReferencesTargetSamModelingElements>
+            </samModelingElements>
+          </statusValue>
+          <statusValue Id="b76ac23a-cb8c-469a-9ead-198bf6106c8a" label="Approved" isInhibiting="false" isInitial="false" isStateGuarded="false" />
+          <statusValue Id="b76ac23a-cb8c-469a-9ead-198bf6106c81" label="ApprovalnotNecessary" isInhibiting="false" isInitial="false" isStateGuarded="false" />
+          <statusValue Id="4df6aa78-3d1d-46ad-a30e-92a48683981d" label="Rejected" isInhibiting="false" isInitial="false" isStateGuarded="false" />
+          <statusValue Id="210fca22-5c86-4d27-9e16-b12ea3dfcd68" label="InRevision" isInhibiting="false" isInitial="false" isStateGuarded="false">
+            <samModelingElements>
+              <samModelingElementReferencesTargetSamModelingElements type="EnablingPreCondition">
+                <actionMoniker Id="bc2a06a0-5bf1-45b7-b1ff-c58fc197fded" />
+              </samModelingElementReferencesTargetSamModelingElements>
+            </samModelingElements>
+          </statusValue>
+          <statusValue Id="d42f45c4-988a-444b-bce3-ab4b5e93f6a7" label="Withdrawn" isInhibiting="false" isInitial="false" isStateGuarded="false">
+            <samModelingElements>
+              <samModelingElementReferencesTargetSamModelingElements type="EnablingPreCondition">
+                <actionMoniker Id="bc2a06a0-5bf1-45b7-b1ff-c58fc197fded" />
+              </samModelingElementReferencesTargetSamModelingElements>
+            </samModelingElements>
+          </statusValue>
+        </statusValues>
+      </statusVariable>
+    </statusVariables>
+    <actions>
+      <action Id="bc2a06a0-5bf1-45b7-b1ff-c58fc197fded" label="SubmitForApproval_APP1" isAgent="false" isPreconditionFixed="false">
+        <samModelingElements>
+          <samModelingElementReferencesTargetSamModelingElements type="StatusTransition">
+            <statusValueMoniker Id="0f48b166-b50f-4301-920b-54184eceb586" />
+          </samModelingElementReferencesTargetSamModelingElements>
+          <samModelingElementReferencesTargetSamModelingElements type="StatusTransition">
+            <statusValueMoniker Id="b76ac23a-cb8c-469a-9ead-198bf6106c81" />
+          </samModelingElementReferencesTargetSamModelingElements>
+        </samModelingElements>
+      </action>
+      <action Id="2887d52a-814f-4aae-ab21-1d92192936d4" label="Approve_APP1" isAgent="false" isPreconditionFixed="false">
+        <samModelingElements>
+          <samModelingElementReferencesTargetSamModelingElements type="StatusTransition">
+            <statusValueMoniker Id="b76ac23a-cb8c-469a-9ead-198bf6106c8a" />
+          </samModelingElementReferencesTargetSamModelingElements>
+          <samModelingElementReferencesTargetSamModelingElements type="StatusTransition">
+            <statusValueMoniker Id="0f48b166-b50f-4301-920b-54184eceb586" />
+          </samModelingElementReferencesTargetSamModelingElements>
+        </samModelingElements>
+      </action>
+      <action Id="1f54957e-d79a-4a00-9149-f3aad6743f68" label="Reject_APP1" isAgent="false" isPreconditionFixed="false">
+        <samModelingElements>
+          <samModelingElementReferencesTargetSamModelingElements type="StatusTransition">
+            <statusValueMoniker Id="4df6aa78-3d1d-46ad-a30e-92a48683981d" />
+          </samModelingElementReferencesTargetSamModelingElements>
+        </samModelingElements>
+      </action>
+      <action Id="f9d01c49-5095-44a2-872b-30242b10f915" label="SendBackForRevision_APP1" isAgent="false" isPreconditionFixed="false">
+        <samModelingElements>
+          <samModelingElementReferencesTargetSamModelingElements type="StatusTransition">
+            <statusValueMoniker Id="210fca22-5c86-4d27-9e16-b12ea3dfcd68" />
+          </samModelingElementReferencesTargetSamModelingElements>
+        </samModelingElements>
+      </action>
+      <action Id="a3fcdde3-3ccb-42a1-9d46-5cde84dd794d" label="WithdrawFromApproval_APP1" isAgent="false" isPreconditionFixed="false">
+        <samModelingElements>
+          <samModelingElementReferencesTargetSamModelingElements type="StatusTransition">
+            <statusValueMoniker Id="d42f45c4-988a-444b-bce3-ab4b5e93f6a7" />
+          </samModelingElementReferencesTargetSamModelingElements>
+        </samModelingElements>
+      </action>
+    </actions>
+  </businessObjectNode>

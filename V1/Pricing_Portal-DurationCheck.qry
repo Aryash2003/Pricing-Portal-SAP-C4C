@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://sap.com/xi/BASIS/Global">
+  <ProxyName xmlns="">YTFS8S0TY_TMOZQCBR8FBV4Y</ProxyName>
+  <QueryDefintionXrepPath xmlns="">/YTFS8S0TY_MAIN/SRC/V1/Pricing_Portal-DurationCheck.sadl</QueryDefintionXrepPath>
+  <Description xmlns="">Main time left query</Description>
+  <AnalyticalQueryIndicator xmlns="">false</AnalyticalQueryIndicator>
+  <SensitiveQueryIndicator xmlns="">false</SensitiveQueryIndicator>
+  <LanguageCode xmlns="">EN</LanguageCode>
+  <ParentNodeProxyName xmlns="">ROOT4F903855210031B0</ParentNodeProxyName>
+  <BOProxyName xmlns="">YTFS8S0TY_PRALDC5C7D903D295205</BOProxyName>
+  <LogReferenceFields xmlns="">false</LogReferenceFields>
+  <QueryAnnotationElements xmlns="">
+    <QueryInputParameters>
+      <ProxyName>PRICEAROOT0030CCF38574E2AF</ProxyName>
+      <Name>PriceAmount</Name>
+      <Type>APC_S_AMOUNT</Type>
+      <MetaObjectProxyName>CURRENCY_CODE</MetaObjectProxyName>
+      <MetaObjectProxyName>CONTENT</MetaObjectProxyName>
+      <uiTextProxyName>YTFS8S0TY_10FF6DD4E5173E64</uiTextProxyName>
+      <BindingInformation>
+        <BOProxyName xmlns="http://sap.com/xi/BASIS/Global">YTFS8S0TY_PRALDC5C7D903D295205</BOProxyName>
+        <BONodeProxyName xmlns="http://sap.com/xi/BASIS/Global">ROOT4F903855210031B0</BONodeProxyName>
+        <BONodeElementProxyName xmlns="http://sap.com/xi/BASIS/Global">PRICEAMOUNT039F150A69372123</BONodeElementProxyName>
+      </BindingInformation>
+    </QueryInputParameters>
+    <QueryQRTNElements>
+      <ProxyName>PRICEAROOT0030CCF38574E2AF</ProxyName>
+      <Name>PriceAmount</Name>
+      <Type>APC_S_AMOUNT</Type>
+      <MetaObjectProxyName>CURRENCY_CODE</MetaObjectProxyName>
+      <MetaObjectProxyName>CONTENT</MetaObjectProxyName>
+      <uiTextProxyName>YTFS8S0TY_10FF6DD4E5173E64</uiTextProxyName>
+      <BindingInformation>
+        <BOProxyName xmlns="http://sap.com/xi/BASIS/Global">YTFS8S0TY_PRALDC5C7D903D295205</BOProxyName>
+        <BONodeProxyName xmlns="http://sap.com/xi/BASIS/Global">ROOT4F903855210031B0</BONodeProxyName>
+        <BONodeElementProxyName xmlns="http://sap.com/xi/BASIS/Global">PRICEAMOUNT039F150A69372123</BONodeElementProxyName>
+      </BindingInformation>
+    </QueryQRTNElements>
+    <ParentNodeProxyName>ROOT4F903855210031B0</ParentNodeProxyName>
+    <UseForFeedsIndicator>false</UseForFeedsIndicator>
+    <UseForEnterpriseSearchIndicator>false</UseForEnterpriseSearchIndicator>
+  </QueryAnnotationElements>
+</QueryDefinition>

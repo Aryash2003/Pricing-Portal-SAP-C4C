@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.9.20251007.1.66_SAP" APIVersion="3.6.25280.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2026-03-13T17:56:09Z" uuid="7c9539b1-6f13-4540-aa6e-23ae5dc05d87">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/2.8/">
+   <?formServer defaultPDFRenderFormat acrobat9.0dynamic?>
+   <?formServer allowRenderCaching 0?>
+   <?formServer formModel both?>
+   <subform name="Pricing_PortalForm" layout="tb" locale="de_DE">
+      <pageSet>
+         <pageArea name="Page1" id="Page1">
+            <contentArea x="6.356mm" y="4.7mm" w="203.2mm" h="266.7mm"/>
+            <medium stock="default" short="215.9mm" long="279.4mm"/>
+            <draw name="Text1" w="203.2mm" h="15.875mm" x="6.35mm" y="28.575mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text xliff:rid="8920FDBD-5B85-4FC7-8D15-76D9723AFA42">Pricing Portal</text>
+               </value>
+               <font size="26pt" typeface="Bernard MT Condensed" baselineShift="0pt"/>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <para hAlign="center" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               <?renderCache.bounds 573166 42166 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 14 Pricing Portal 0 217808 24281 0 0 0 "Bernard MT Condensed" 0 0 26000 ISO-8859-1?></draw>
+            <field name="PricingID" w="62mm" h="9mm" x="6.35mm" y="53.975mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="EC92FF49-724D-4D3C-9D37-165F511DFE3A">Pricing ID</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.Pricing_Portal.PricingID"/>
+            </field>
+            <field name="combination_data" w="111.414mm" h="0.535694in" x="6.427mm" y="77.155mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                  <value>
+                     <text xliff:rid="DA4F8153-B3B1-4027-80BC-BB85E9C1B0B8">Combination_data</text>
+                  </value>
+                  <font typeface="Arial" baselineShift="0pt"/>
+               </caption>
+               <bind match="dataRef" ref="$.Pricing_Portal.combination_data"/>
+            </field>
+            <draw name="Image1" w="47.37mm" h="43.157mm" x="7.729mm" y="6.319mm">
+               <value>
+                  <image contentType="image/jpeg" aspect="none">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</image>
+               </value>
+               <ui>
+                  <imageEdit/>
+               </ui>
+               <desc>
+                  <text name="embeddedHref">..\..\..\..\..\OneDrive\Pictures\1631301299672.jpg</text>
+               </desc>
+            </draw>
+            <field name="Status_Data" y="65.996mm" x="6.763mm" w="62mm" h="9mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="363A02EC-3185-4E77-A381-6801197AD7F9">Status_Data</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.Pricing_Portal.Status_Data"/>
+            </field>
+            <field name="SalesOrganization" y="92.727mm" x="6.763mm" w="62mm" h="0.474583in">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="B75569DF-DB02-4D7F-AD69-9DFD17A4F048">Sales Organization</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.Pricing_Portal.SalesOrganization"/>
+            </field>
+            <field name="Primary_Approver_data" y="108.971mm" x="6.763mm" w="85.725mm" h="19.05mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="0FE827BF-7A72-45DF-AD94-73158C998F2F">Primary_Approver Data</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.Pricing_Portal.Primary_Approver"/>
+            </field>
+            <field name="Quantity_data" y="131.305mm" x="7.115mm" w="62mm" h="9mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <value>
+                  <decimal fracDigits="-1"/>
+               </value>
+               <caption reserve="25.3881mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="F3811769-727C-446D-AEDA-DFCB75D7DE58">Quantity Data</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.Pricing_Portal.Quantity"/>
+               <validate nullTest="error"/>
+            </field>
+            <subform name="TextFieldValueHelpSF" x="76.2mm" y="142.875mm">
+               <para hAlign="center" vAlign="middle"/>
+               <event activity="enter" name="event__enter">
+                  <script contentType="application/x-javascript"> 
+
+// DO NOT MODIFY THE CODE BEYOND THIS POINT - 1190.20181115152218.911550 - ValueHelpTextField.xfo.p1
+
+// Get the ZCI valuehelpflag, if its true and the form is not in readOnly mode,
+// the value help button is made visible on focus only when its inside the table.
+// If the form is in readOnly mode, the button should not be made visible at all.
+
+// NOTE : If the FieldValueHelp XFO is placed inside a nested table, this should be edited to point to the 
+// right parent to figure out if its placed inside a table.
+// Only if its a dynamic form the button will be made visible.
+
+if (xfa.config.acrobat.acrobat7.dynamicRender.value == "required") {
+	if (this.parent.parent.layout == "table") {
+		var valueHelpFlag = ContainerFoundation_JS.getGlobalValue(event.target, "valueHelpFlag");
+		if(valueHelpFlag == true) {
+			if (this.ValueHelpButton.presence != "visible") {
+				var isFormReadOnly = false;
+				if (xfa.host.version &gt;= 9) {
+					var formRootNode = ContainerFoundation_JS.getFormRootNode(event.target);
+					var resolvedFormRootNode = xfa.resolveNode(formRootNode);
+					if (resolvedFormRootNode.access == "readOnly") {
+						isFormReadOnly = true;
+					}
+				} else {
+					if (this.ValueSelectTextField.access == "readOnly") {
+						isFormReadOnly = true;
+					}
+				}
+				if (isFormReadOnly == false) {
+					var originalDirty = event.target.dirty;
+
+					this.ValueHelpButton.presence = "visible";
+					xfa.host.setFocus(this.ValueSelectTextField);
+						
+					// Reset the original form dirty state. Dynamic PDF needs a timer.
+					// The result of this timer is checked in isDocDirty().
+					var textFieldEnterTimer = null;
+					if(event.target.dynamicXFAForm == true) {
+						var pendingDSUpdate = ContainerFoundation_JS.getGlobalValue(event.target, "pendingVHFieldDSUpdate");
+						if(pendingDSUpdate == false) {
+							ContainerFoundation_JS.setGlobalValue(event.target, "pendingVHFieldDSUpdate", true);
+							ContainerFoundation_JS.setGlobalValue(event.target, "isDirtyStateValid", false);
+					
+                                                        var timeoutCode = 'this.dirty = ' + originalDirty + ';' + 
+                                                                          ContainerFoundation_JS.getGlobalValue(event.target, "zciScriptObject") + '.setGlobalValue(this, "isDirtyStateValid", true);' + 
+                                                                          ContainerFoundation_JS.getGlobalValue(event.target, "zciScriptObject") + '.setGlobalValue(this, "pendingVHFieldDSUpdate", false);' + 
+                                                                          ContainerFoundation_JS.getGlobalValue(event.target, "zciScriptObject") + '.SendLogMessage(this, 0, "textFieldEnterTimer timer fired");'; 
+			
+							ContainerFoundation_JS.SendLogMessage(event.target, 0, "textFieldEnterTimer timeoutCode: " + timeoutCode);                							                    
+						    textFieldEnterTimer = app.setTimeOut(timeoutCode, 1);
+					    } else {
+					    	ContainerFoundation_JS.SendLogMessage(event.target, 0, "TextFieldEnterTimer not set due to a pending valueHelp dirty state update timer.");  
+					    }
+					} else {
+						event.target.dirty = originalDirty;
+						ContainerFoundation_JS.setGlobalValue(event.target, "isDirtyStateValid", true);									 
+					}
+				}
+			}
+		}
+	}
+}
+	
+// END OF DO NOT MODIFY
+                     
+</script>
+               </event>
+               <event activity="exit" name="event__exit">
+                  <script contentType="application/x-javascript"> 
+
+// DO NOT MODIFY THE CODE BEYOND THIS POINT - 1190.20181115152218.911550 - ValueHelpTextField.xfo.p4
+
+// NOTE : If the FieldValueHelp XFO is placed inside a nested table, this should be edited to point to the 
+// right parent to figure out if its placed inside a table.
+
+if (xfa.config.acrobat.acrobat7.dynamicRender.value == "required") {
+	if (this.parent.parent.layout == "table") {
+		var originalDirty = event.target.dirty;
+
+		this.ValueHelpButton.presence = "invisible";
+		
+		// Reset the original form dirty state. Dynamic PDF needs a timer.
+		// The result of this timer is checked in isDocDirty().
+		var textFieldExitTimer = null;
+		if(event.target.dynamicXFAForm == true) {
+			var pendingDSUpdate = ContainerFoundation_JS.getGlobalValue(event.target, "pendingVHFieldDSUpdate");
+			if(pendingDSUpdate == false) {
+				ContainerFoundation_JS.setGlobalValue(event.target, "pendingVHFieldDSUpdate", true);
+				ContainerFoundation_JS.setGlobalValue(event.target, "isDirtyStateValid", false);
+		
+                                var timeoutCode = 'this.dirty = ' + originalDirty + ';' + 
+                                                  ContainerFoundation_JS.getGlobalValue(event.target, "zciScriptObject") + '.setGlobalValue(this, "isDirtyStateValid", true);' + 
+                                                  ContainerFoundation_JS.getGlobalValue(event.target, "zciScriptObject") + '.setGlobalValue(this, "pendingVHFieldDSUpdate", false);' + 
+                                                  ContainerFoundation_JS.getGlobalValue(event.target, "zciScriptObject") + '.SendLogMessage(this, 0, "textFieldExitTimer timer fired");'; 
+
+				ContainerFoundation_JS.SendLogMessage(event.target, 0, "textFieldExitTimer timeoutCode: " + timeoutCode);                							                    
+			    textFieldExitTimer = app.setTimeOut(timeoutCode, 1);
+		    } else {
+		    	ContainerFoundation_JS.SendLogMessage(event.target, 0, "TextFieldExitTimer not set due to a pending valueHelp dirty state update timer.");  
+		    }
+		} else {
+			event.target.dirty = originalDirty;
+			ContainerFoundation_JS.setGlobalValue(event.target, "isDirtyStateValid", true);									 
+		}
+	}
+}
+
+	
+// END OF DO NOT MODIFY
+                     
+</script>
+               </event>
+               <bind match="none"/>
+               <?templateDesigner expand 1?></subform>
+            <field name="StartDate" y="145.182mm" x="6.091mm" w="41.275mm" h="0.307917in">
+               <ui>
+                  <dateTimeEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </dateTimeEdit>
+               </ui>
+               <font size="9pt" typeface="Arial"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <value>
+                  <date/>
+               </value>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="989425C3-0218-43AE-AB62-651BB8E25A63">Start Date</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.Pricing_Portal.StartDate">
+                  <picture>date{YYYY-MM-DD}</picture>
+               </bind>
+               <validate nullTest="error"/>
+            </field>
+            <field name="EndDate" y="144.83mm" x="50.089mm" w="41.275mm" h="0.307917in">
+               <ui>
+                  <dateTimeEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </dateTimeEdit>
+               </ui>
+               <font size="9pt" typeface="Arial"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <value>
+                  <date/>
+               </value>
+               <caption reserve="25mm">
+                  <font size="9pt" typeface="Arial" baselineShift="0pt"/>
+                  <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                  <value>
+                     <text xliff:rid="7195D94A-154B-4D01-9945-B2963636F583">End Date</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.Pricing_Portal.EndDate">
+                  <picture>date{YYYY-MM-DD}</picture>
+               </bind>
+               <validate nullTest="error"/>
+            </field>
+            <field name="Duration" y="145.182mm" x="94.758mm" w="38.1mm" h="0.307917in">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font size="9pt" typeface="Arial"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <value>
+                  <integer/>
+               </value>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="0B012499-D92F-4A72-9954-4E741ED5CF77">Duration</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.Pricing_Portal.Duration"/>
+               <validate nullTest="error">
+                  <script contentType="application/x-javascript">this.isNull || (this.rawValue &gt;= -2147483648 &amp;&amp; this.rawValue &lt;= 2147483647);&#xD;
+</script>
+               </validate>
+            </field>
+            <draw name="Text2" y="50.8mm" x="139.7mm" w="66.675mm" h="9.525mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text xliff:rid="546CCBCB-4E89-49BD-8F81-D08B60B98840">Organizational Data</text>
+               </value>
+               <font size="22pt" typeface="Bernard MT Condensed" baselineShift="0pt"/>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <para hAlign="center" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               <?renderCache.bounds 186166 24166 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 19 Organizational Data 0 9782 20764 0 0 0 "Bernard MT Condensed" 0 0 22000 ISO-8859-1?></draw>
+            <field name="SoldToPartyID" y="63.5mm" x="142.875mm" w="62mm" h="0.474583in">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25.3881mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="E1652BD3-02CB-4327-ACBA-3251D6CC6103">Sold To Party ID</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.Pricing_Portal.SoldToPartyID"/>
+            </field>
+            <field name="ShipToPartyID" y="79.375mm" x="124.526mm" w="80.349mm" h="12.054mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="B9F85FFF-A7AA-4F29-B1BB-3E674390B2CC">Ship To Party ID</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.Pricing_Portal.ShipToPartyID"/>
+            </field>
+            <field name="MaterialID" y="95.25mm" x="108.283mm" w="96.592mm" h="9mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="B250EBBE-F701-4D4E-8F77-7435E6F8580A">Material ID</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.Pricing_Portal.MaterialID"/>
+            </field>
+            <field name="Shipping_Condition_Data" y="107.95mm" x="138.403mm" w="66.471mm" h="12.054mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="C3346911-F554-4B55-BEB3-CFEFDCBF274B">SC_Data</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.Pricing_Portal.SC_Data"/>
+            </field>
+            <field name="CC_Data" y="123.825mm" x="137.061mm" w="67.815mm" h="16.288mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="2877D5F2-21C0-45B6-A020-08380A648EA0">CC_Data</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.Pricing_Portal.CC_Data"/>
+            </field>
+            <field name="Incotem_data" y="146.05mm" x="142.875mm" w="62mm" h="9mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="7B92BB14-D543-4FB9-A736-DC3F035786D8">Incotem_data</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.Pricing_Portal.Incotem_data"/>
+            </field>
+            <field name="PriceAmount_data" y="158.708mm" x="7.114mm" w="73.025mm" h="12.7mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <value>
+                  <decimal fracDigits="-1"/>
+               </value>
+               <caption reserve="24.98mm">
+                  <font typeface="Arial" baselineShift="0pt"/>
+                  <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                  <value>
+                     <text xliff:rid="85DA0896-3452-474C-9903-1BD3E1769F05">Price Amount Data</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.Pricing_Portal.PriceAmount"/>
+               <validate nullTest="error"/>
+            </field>
+            <draw name="Text3" y="191.329mm" x="81.799mm" w="63.5mm" h="12.7mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text xliff:rid="533349A3-510B-41DB-BEE4-2AEE69494A4D">Involved Parties</text>
+               </value>
+               <font size="24pt" typeface="Bernard MT Condensed" baselineShift="0pt"/>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               <?renderCache.bounds 177166 33166 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 16 Involved Parties 0 1417 22522 0 0 0 "Bernard MT Condensed" 0 0 24000 ISO-8859-1?></draw>
+            <draw name="Line1" y="173.944mm" x="6.091mm" w="204.4mm" h="1.695mm">
+               <value>
+                  <line/>
+               </value>
+            </draw>
+            <subform name="Subform1" x="60.736mm" y="208.528mm" w="110.978mm" layout="tb">
+               <bind match="none"/>
+               <subform name="Table1" layout="table" columnWidths="30.291mm 19.849mm 32.128mm 22.102mm">
+                  <border>
+                     <edge/>
+                  </border>
+                  <subform layout="row" name="HeaderRow" id="HeaderRow_ID">
+                     <assist role="TH"/>
+                     <draw h="10mm" name="H1">
+                        <border>
+                           <edge/>
+                        </border>
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <value>
+                           <text xliff:rid="BE0B823A-18F6-468B-9A37-8918B271D423">Party ID</text>
+                        </value>
+                        <font typeface="Arial" weight="bold" size="8pt"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle" hAlign="center"/>
+                     </draw>
+                     <draw h="10mm" name="H7">
+                        <border>
+                           <edge/>
+                        </border>
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <value>
+                           <text xliff:rid="63193B4C-90B9-44B1-8C1D-16951F423C51">Role</text>
+                        </value>
+                        <font typeface="Arial" weight="bold" size="8pt"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle" hAlign="center"/>
+                     </draw>
+                     <draw h="10mm" name="H8">
+                        <border>
+                           <edge/>
+                        </border>
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <value>
+                           <text xliff:rid="82F3A369-B5B6-4F1E-8D4B-A8096F507E9E">Email</text>
+                        </value>
+                        <font typeface="Arial" weight="bold" size="8pt"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle" hAlign="center"/>
+                     </draw>
+                     <draw h="10mm" name="H9">
+                        <border>
+                           <edge/>
+                        </border>
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <value>
+                           <text xliff:rid="F53075CD-195A-4F8C-9D7F-8468697D0B24">Is Active</text>
+                        </value>
+                        <font typeface="Arial" weight="bold" size="8pt"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle" hAlign="center"/>
+                     </draw>
+                     <border>
+                        <edge presence="hidden"/>
+                     </border>
+                     <occur max="-1"/>
+                     <bind match="none"/>
+                     <?templateDesigner expand 1?></subform>
+                  <subform layout="row" name="Row1">
+                     <assist role="TR"/>
+                     <occur min="0" max="-1"/>
+                     <field h="12.482mm" name="f_PartyID">
+                        <ui>
+                           <textEdit>
+                              <border>
+                                 <edge stroke="none"/>
+                              </border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial" size="8pt"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle" hAlign="center"/>
+                        <border>
+                           <edge/>
+                        </border>
+                        <bind match="dataRef" ref="$.PartyID"/>
+                     </field>
+                     <field h="12.482mm" name="f_RoleCode">
+                        <ui>
+                           <textEdit>
+                              <border>
+                                 <edge stroke="none"/>
+                              </border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial" size="8pt"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle" hAlign="center"/>
+                        <border>
+                           <edge/>
+                        </border>
+                        <bind match="dataRef" ref="$.RoleCode"/>
+                     </field>
+                     <field h="12.482mm" name="f_Email">
+                        <ui>
+                           <textEdit>
+                              <border>
+                                 <edge stroke="none"/>
+                              </border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial" size="8pt"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle" hAlign="center"/>
+                        <border>
+                           <edge/>
+                        </border>
+                        <bind match="dataRef" ref="$.Email"/>
+                     </field>
+                     <field h="12.482mm" name="f_IsActive">
+                        <ui>
+                           <textEdit>
+                              <border>
+                                 <edge stroke="none"/>
+                              </border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial" size="8pt"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle" hAlign="center"/>
+                        <border>
+                           <edge/>
+                        </border>
+                        <bind match="dataRef" ref="$.IsActive"/>
+                     </field>
+                     <border>
+                        <edge presence="hidden"/>
+                     </border>
+                     <bind match="dataRef" ref="$.Pricing_Portal.InvolvedParties[*]"/>
+                     <?templateDesigner expand 1?></subform>
+                  <bind match="none"/>
+                  <overflow leader="HeaderRow"/>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <proto/>
+      <desc>
+         <text name="version">8.01.3266.1.494682.458675</text>
+      </desc>
+      <?templateDesigner Hyphenation excludeInitialCap:1, excludeAllCaps:1, wordCharCnt:7, remainCharCnt:3, pushCharCnt:3?>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 132 33 00030024002600270028002C003000320033003400360037004200440045004600470048004A004B004C004F005000510052005300550056005700580059005C005D ACDEIMOPQST_abcdeghilmnoprstuvyz?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 76 19 0003002400270028002C00330035004400460048004C004F005000520055005600570059005C ADEIPRaceilmorstvy?>
+      <?renderCache.subset "Bernard MT Condensed" 0 0 ISO-8859-1 4 76 19 00030027002C003200330044004600470048004A004C004F005100520055005600570059005D DIOPacdegilnorstvz?></subform>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/2.5/?>
+   <?templateDesigner Grid show:0, snap:0, units:0, color:ff8080, origin:(0,0), interval:(125000,125000), objsnap:0, guidesnap:0, pagecentersnap:0?>
+   <?templateDesigner DefaultLanguage FormCalc?>
+   <?templateDesigner DefaultRunAt client?>
+   <?PDFPrintOptions embedViewerPrefs 0?>
+   <?PDFPrintOptions embedPrintOnFormOpen 0?>
+   <?PDFPrintOptions scalingPrefs 0?>
+   <?PDFPrintOptions enforceScalingPrefs 0?>
+   <?PDFPrintOptions paperSource 0?>
+   <?PDFPrintOptions duplexMode 0?>
+   <?templateDesigner DefaultPreviewType print?>
+   <?templateDesigner DefaultPreviewPagination simplex?>
+   <?templateDesigner XDPPreviewFormat 20?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 1?>
+   <?templateDesigner FormTargetVersion 28?>
+   <?templateDesigner Zoom 60?>
+   <?templateDesigner Rulers horizontal:0, vertical:0, guidelines:1, crosshairs:0?></template>
+<config xmlns="http://www.xfa.org/schema/xci/2.8/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>3</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font typeface="Berlin Sans FB" psName="BerlinSansFB-Reg" weight="normal" posture="normal"/>
+      <font typeface="Brush Script MT" psName="BrushScriptMT" weight="normal" posture="italic"/>
+      <font typeface="Bernard MT Condensed" psName="BernardMT-Condensed" weight="normal" posture="normal"/>
+   </psMap>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection name="DataConnection" dataDescription="Pricing_PortalForm">
+      <uri>.\Pricing_PortalForm.xsd</uri>
+      <rootElement>Pricing_PortalForm</rootElement>
+      <?templateDesigner fileDigest shaHash="QPvALDh0XS4LxNiDdfuAhjJ9/HA="?></xsdConnection>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-connection-set/2.4/?></connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="Pricing_PortalForm">
+      <Pricing_PortalForm>
+         <Pricing_Portal>
+            <PricingID/>
+            <Combination/>
+            <combination_data/>
+            <Status/>
+            <Type/>
+            <Status_Data/>
+            <AccountManager schemeID="" schemeAgencyID=""/>
+            <Manager schemeID="" schemeAgencyID=""/>
+            <Emp_UUID schemeID="" schemeAgencyID=""/>
+            <StartDate/>
+            <EndDate/>
+            <Requester schemeID="" schemeAgencyID=""/>
+            <SalesOrganization/>
+            <SoldToPartyID/>
+            <ShipToPartyID/>
+            <MaterialID/>
+            <Primary_Approver schemeID="" schemeAgencyID=""/>
+            <ShippingCondition/>
+            <SC_Data/>
+            <CustomerConditionGroup/>
+            <CC_Data/>
+            <Duration/>
+            <Incoterm/>
+            <Incotem_data/>
+            <Quantity unitCode=""/>
+            <PriceAmount currencyCode=""/>
+            <ApprovalStatus/>
+            <ApprovalData/>
+            <SAP_SystemAdministrativeData>
+               <CreationDateTime/>
+               <CreationIdentityUUID schemeID="" schemeAgencyID=""/>
+               <LastChangeDateTime/>
+               <LastChangeIdentityUUID schemeID="" schemeAgencyID=""/>
+            </SAP_SystemAdministrativeData>
+            <InvolvedParties dd:minOccur="0" dd:maxOccur="-1">
+               <PartyID schemeID="" schemeAgencyID=""/>
+               <RoleCode/>
+               <Party_UUID schemeID="" schemeAgencyID=""/>
+               <Street/>
+               <City/>
+               <PostalCode/>
+               <CountryCode/>
+               <Email schemeID=""/>
+               <IsActive/>
+               <MainContactID/>
+            </InvolvedParties>
+         </Pricing_Portal>
+      </Pricing_PortalForm>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="de_DE" desc="German (Germany)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>Januar</month>
+            <month>Februar</month>
+            <month>März</month>
+            <month>April</month>
+            <month>Mai</month>
+            <month>Juni</month>
+            <month>Juli</month>
+            <month>August</month>
+            <month>September</month>
+            <month>Oktober</month>
+            <month>November</month>
+            <month>Dezember</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mrz</month>
+            <month>Apr</month>
+            <month>Mai</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Okt</month>
+            <month>Nov</month>
+            <month>Dez</month>
+         </monthNames>
+         <dayNames>
+            <day>Sonntag</day>
+            <day>Montag</day>
+            <day>Dienstag</day>
+            <day>Mittwoch</day>
+            <day>Donnerstag</day>
+            <day>Freitag</day>
+            <day>Samstag</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>So</day>
+            <day>Mo</day>
+            <day>Di</day>
+            <day>Mi</day>
+            <day>Do</day>
+            <day>Fr</day>
+            <day>Sa</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>vorm.</meridiem>
+            <meridiem>nachm.</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>v. Chr.</era>
+            <era>n. Chr.</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D. MMMM YYYY</datePattern>
+         <datePattern name="long">D. MMMM YYYY</datePattern>
+         <datePattern name="med">DD.MM.YYYY</datePattern>
+         <datePattern name="short">DD.MM.YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">H:MM' Uhr 'Z</timePattern>
+         <timePattern name="long">HH:MM:SS Z</timePattern>
+         <timePattern name="med">HH:MM:SS</timePattern>
+         <timePattern name="short">HH:MM</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GjMtkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">z,zz9.99 $</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">,</numberSymbol>
+         <numberSymbol name="grouping">.</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">€</currencySymbol>
+         <currencySymbol name="isoname">EUR</currencySymbol>
+         <currencySymbol name="decimal">,</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.1-c002 79.fd02715, 2024/05/22-04:12:37        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdfuaid="http://www.aiim.org/pdfua/ns/id/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2026-03-13T17:56:09Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdfuaid:part>1</pdfuaid:part>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:7c9539b1-6f13-4540-aa6e-23ae5dc05d87</xmpMM:DocumentID>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>8.01.3266.1.494682.458675</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

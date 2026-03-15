@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MassDataRunObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://sap.com/ByD/PDI/MassDataRunObjectDefinition">
+  <MdroEsrNameSpace xmlns="">http://refsystems.sap.com/YTFS8S0TY_</MdroEsrNameSpace>
+  <MdroEsrName xmlns="">MassDataRun1</MdroEsrName>
+  <MdroPrxName xmlns="">YTFS8S0TY_MAN17AC0EE7BA4049217</MdroPrxName>
+  <ParallelProcessing xmlns="" />
+  <ApplicationLogDetailLevelCode xmlns="">9</ApplicationLogDetailLevelCode>
+  <ApplicationLogRetentionTimeCode xmlns="">P1D</ApplicationLogRetentionTimeCode>
+  <AccessControlledBoList xmlns="">
+    <AccessControlledBo>
+      <ActionEntity>
+        <BoEsrNameSpace>http://refsystems.sap.com/YTFS8S0TY_</BoEsrNameSpace>
+        <BoEsrName>Pricing_Portal</BoEsrName>
+        <BoPrxName>YTFS8S0TY_PRALDC5C7D903D295205</BoPrxName>
+        <BoEsrNodeName>Root</BoEsrNodeName>
+        <BoPrxNodeName>ROOT4F903855210031B0</BoPrxNodeName>
+        <BoEsrEntityName>updatelogs</BoEsrEntityName>
+        <BoPrxEntityName>UPDATELOGSE700325784800C36</BoPrxEntityName>
+      </ActionEntity>
+      <ActionPath>\TO_PARENT</ActionPath>
+      <QueryEntity>
+        <BoEsrNameSpace>http://refsystems.sap.com/YTFS8S0TY_</BoEsrNameSpace>
+        <BoEsrName>Pricing_Portal</BoEsrName>
+        <BoPrxName>YTFS8S0TY_PRALDC5C7D903D295205</BoPrxName>
+        <BoEsrNodeName>DurationCheck</BoEsrNodeName>
+        <BoPrxNodeName>DURATICHECK6D8E757AF9ED31E1</BoPrxNodeName>
+        <BoEsrEntityName>QueryByElements</BoEsrEntityName>
+        <BoPrxEntityName>QUERY_BY_ELEMENTS</BoPrxEntityName>
+      </QueryEntity>
+      <QueryParameterList>
+        <QueryParameter>
+          <QueryEsrParameterName>PriceAmount/currencyCode</QueryEsrParameterName>
+          <QueryPrxParameterName>PRICEAROOT0030CCF38574E2AF-CURRENCY_CODE</QueryPrxParameterName>
+          <QueryPrxParameterDataType>CDT_CURRENCY_CODE</QueryPrxParameterDataType>
+          <QueryPrxParentParameterDataType>APC_S_AMOUNT</QueryPrxParentParameterDataType>
+          <MdroEsrNodeName>SelectByPriceAmountCurrencyCode</MdroEsrNodeName>
+          <MdroPrxNodeName>SEL_BY_PRDED70AB042E486B25A</MdroPrxNodeName>
+        </QueryParameter>
+        <QueryParameter>
+          <QueryEsrParameterName>PriceAmount/content</QueryEsrParameterName>
+          <QueryPrxParameterName>PRICEAROOT0030CCF38574E2AF-CONTENT</QueryPrxParameterName>
+          <QueryPrxParameterDataType>APC_S_AMOUNT</QueryPrxParameterDataType>
+          <QueryPrxParentParameterDataType>APC_S_AMOUNT</QueryPrxParentParameterDataType>
+          <MdroEsrNodeName>SelectByPriceAmountContent</MdroEsrNodeName>
+          <MdroPrxNodeName>SEL_BY_PRNTE40E68AA42748C43</MdroPrxNodeName>
+        </QueryParameter>
+      </QueryParameterList>
+    </AccessControlledBo>
+  </AccessControlledBoList>
+</MassDataRunObject>

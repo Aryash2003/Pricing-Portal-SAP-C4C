@@ -1,0 +1,94 @@
+﻿
+import AP.Common.GDT;
+import BASIS.Global;
+import AP.CRM.Global;
+import AP.FO.MOM.Global;
+import AP.FO.Product.Global;
+import AP.FO.ProductDataMaintenance.Global;
+import AP.FO.BusinessPartner.Global;
+import AP.PDI.bo as pdi;
+import ABSL;
+
+if (this.IsSet()) {
+	this.PriceAmount.currencyCode = "USD";
+	this.Quantity.unitCode="LBR";
+}
+
+
+
+
+if (this.PricingID.IsInitial())
+{
+ 
+	var number = NumberRange.DrawNumber("ESGFO");
+ 
+	this.PricingID = number.ToString();
+}
+
+
+
+
+var query1=Material.QueryByDescription;
+
+var selectionparm = query1.CreateSelectionParams();
+selectionparm.Add(query1.ProductID.content, "I", "EQ",this.MaterialID);
+var queryResults = query1.Execute(selectionparm);
+var firstEntry = queryResults.GetFirst();
+
+if (firstEntry.IsSet()) {
+    var firstDesc = firstEntry.Description.GetFirst();
+    if (firstDesc.IsSet()) {
+        this.MaterialID = firstDesc.Description.content;
+    }
+}
+
+if(this.StartDate.IsInitial()){
+    this.StartDate = Context.GetCurrentSystemDate();
+}
+
+
+
+var salesOrgID = this.SalesOrganization;
+var orgUnit = OrganisationalUnit.Retrieve(salesOrgID);
+if (orgUnit.IsSet()) {
+    var orgName = orgUnit.CurrentNameAndAddress.Name;
+    if (orgName.Length()>0) {
+        this.SalesOrganization = orgName;
+    }
+}
+
+
+var EmployeeQuery = Employee.Identification.QueryByEmployeeAttributes;
+var selectionparm101 = EmployeeQuery.CreateSelectionParams();
+selectionparm101.Add(EmployeeQuery.EmployeeID.content, "I", "EQ", this.Primary_Approver.content);
+var queryResults101 = EmployeeQuery.Execute(selectionparm101);
+var entry = queryResults101.GetFirst();
+if (entry.IsSet()) {
+    var instEmployee_Root = entry.ToRoot;
+    this.Manager=this.Primary_Approver;
+    this.Primary_Approver.content = instEmployee_Root.CurrentCommon.BusinessPartnerFormattedName;
+    this.Emp_UUID= instEmployee_Root.UUID;
+}
+// --- Sold To Party ---
+var query = Customer.QueryByIdentification;
+var SelectionParms = query.CreateSelectionParams();
+SelectionParms.Add(query.InternalID, "I", "EQ", this.SoldToPartyID);
+var resultDatas = query.Execute(SelectionParms);
+if (resultDatas.Count() > 0)
+{
+    var firstResults = resultDatas.GetFirst();
+    this.SoldToPartyID = firstResults.CurrentCommon.BusinessPartnerFormattedName;
+}
+
+// --- Ship To Party ---
+var mainquery = Customer.QueryByIdentification;
+var SelectionParms2 = mainquery.CreateSelectionParams();
+SelectionParms2.Add(mainquery.InternalID, "I", "EQ", this.ShipToPartyID); 
+var resultDatas2 = mainquery.Execute(SelectionParms2);                    
+if (resultDatas2.Count() > 0)                                              
+{
+
+    var firstResults2 = resultDatas2.GetFirst();                            
+    this.ShipToPartyID = firstResults2.CurrentCommon.BusinessPartnerFormattedName;
+}
+

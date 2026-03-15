@@ -1,0 +1,67 @@
+﻿/*
+	Add your SAP Business ByDesign scripting language implementation for:
+		Business Object: Pricing_Portal
+		Node: Root
+		Event: BeforeSave 
+		
+	Note: 
+	  - To access the elements of the business object node, 
+	    use path expressions, for example, this.<element name>. 
+	  - To use code completion, press CTRL+J. 
+	  - The solution uses this script when:
+		- the instance of the business object is being saved.
+		- the instance of the business object is created from other sources like web services, preview screen, and so on.
+*/
+
+import AP.Common.GDT;
+import BASIS.Global;
+import AP.CRM.Global;
+import AP.FO.MOM.Global;
+import AP.FO.Product.Global;
+import AP.FO.ProductDataMaintenance.Global;
+import AP.FO.BusinessPartner.Global;
+import ABSL;
+if(this.StartDate.IsInitial()){
+	this.StartDate = Context.GetCurrentSystemDate();
+}
+if(!this.StartDate.IsInitial() && !this.EndDate.IsInitial() && this.Status!="5"){
+	var init = this.StartDate.Delta(this.EndDate);
+	this.Duration = init.ConvertToDays();
+}
+
+if (this.Manager.IsInitial() || this.Primary_Approver.IsInitial()) {
+    this.Manager.content = "5012026";
+	var EmployeeQuery = Employee.Identification.QueryByEmployeeAttributes;
+	var selectionparm101 = EmployeeQuery.CreateSelectionParams();
+	selectionparm101.Add(EmployeeQuery.EmployeeID.content, "I", "EQ", this.Manager.content);
+	var queryResults101 = EmployeeQuery.Execute(selectionparm101);
+	var entry = queryResults101.GetFirst();
+	if (entry.IsSet()) {
+		var instEmployee_Root = entry.ToRoot;
+		this.Primary_Approver.content = instEmployee_Root.CurrentCommon.BusinessPartnerFormattedName;
+		this.Emp_UUID= instEmployee_Root.UUID;
+	}
+}
+
+if(!this.ApprovalStatus.IsInitial() && this.Status!="5"){
+	if(this.ApprovalStatus == "1"){
+		this.Status = "1";
+	}
+	if(this.ApprovalStatus == "2" || this.ApprovalStatus == "4"){
+		this.Status = "3";
+	}
+	if(this.ApprovalStatus == "3" || this.ApprovalStatus == "6"){
+		this.Status = "2";
+	}
+	if(this.ApprovalStatus == "7"){
+		this.Status = "6";
+	}
+	if(this.ApprovalStatus == "5"){
+		this.Status = "4";
+	}
+}
+this.combination_data = this.Combination.GetDescription();
+this.Status_Data = this.Status.GetDescription();
+this.SC_Data = this.ShippingCondition.GetDescription();
+this.CC_Data = this.CustomerConditionGroup.GetDescription();
+this.Incotem_data = this.Incoterm.GetDescription();

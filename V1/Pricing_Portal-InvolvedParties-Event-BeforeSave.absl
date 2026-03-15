@@ -1,0 +1,17 @@
+﻿/*
+	Add your SAP Business ByDesign scripting language implementation for:
+		Business Object: Pricing_Portal
+		Node: InvolvedParties
+		Event: BeforeSave 
+		
+	Note: 
+	  - To access the elements of the business object node, 
+	    use path expressions, for example, this.<element name>. 
+	  - To use code completion, press CTRL+J. 
+	  - The solution uses this script when:
+		- the instance of the business object is being saved.
+		- the instance of the business object is created from other sources like web services, preview screen, and so on.
+*/
+
+import ABSL;
+

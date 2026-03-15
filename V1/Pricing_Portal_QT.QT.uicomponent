@@ -1,0 +1,990 @@
+<?xml version="1.0"?>
+
+
+
+   
+
+<UXComponent xmlns:base="http://www.sap.com/a1s/cd/oberon/base-1.0" xmlns:uxv="http://www.sap.com/a1s/cd/oberon/uxview-1.0" xmlns:uxc="http://www.sap.com/a1s/cd/oberon/uxcontroller-1.0" 
+             id="1B59di_WYK2yFzVz$8iJQm" name="Pricing_Portal_QT" xmlns="http://www.sap.com/a1s/cd/oberon/uxcomponent-1.0" AuthorizationClassificationCode="Application" enableBackendOperationsClubbing="true">
+
+  <uxc:Interface id="t90Gxt2F445Kf8oOKUY1OP">
+        <uxc:InPorts id="93qBfKO07s270DBXh2fF9c">
+      <uxc:InPort id="WoOQ4Jj9r39N8FR2XQQ8TU" name="QuickView" portTypeReference="ThingNavigation" portTypePackage="/SAP_BYD_UI/SystemPortTypes.PTP.uicomponent"
+          onFire="EditHandler" default="true" defaultSet="none" navBO="YTFS8S0TY_APPR_TT" navBONS="http://sap.com/thingTypes" navBONode="Root" navOperation="QuickView">
+            <base:PropertyBag id="C6903vbWbfqqiTi1qcU9Q7">
+          <base:Property id="2e6ZW0h3k2rLvB647PSjxm" name="ISFRAMEWORKFIELD" value="True" />
+          <base:Property id="1od77rZ7xCmFV2GD1QPso3" name="ISTHINGINPUT" value="False" />
+        </base:PropertyBag>
+        <uxc:Parameter id="utgK0JY_PAfKb6ysnP2DpA" name="Key" bind="/Root/InportKey" />
+      </uxc:InPort>
+    </uxc:InPorts>
+        <uxc:Configuration id="5z84oG0mrKUxMPbuUXK3Xm" />
+  </uxc:Interface>
+
+  <uxc:Implementation id="hlbI5Jlv15Kn34xJGcb5w6">
+    <uxc:DataModel id="91TKWw8epctEd8cTn3se9H" name="Root" designtimeMainBOProxyName="Pricing_Portal" designtimeMainBOEsrNamespace="http://refsystems.sap.com/YTFS8S0TY_">
+      <base:PropertyBag id="NWUU3w0bkDozYE1efzcw2s">
+        <base:Property id="orPpRN4rZr2xZhOCmsFVER" name="USERCHANGEDNAME" value="True" />
+        <base:Property id="wyI0J2Z7OOtwkBQy0SE0oj" name="BINDINGSTATUS" value="OK" />
+      </base:PropertyBag>
+      <uxc:Bind id="N$4gVkUvhtvGfbBZ_Q4bR9" proxyName="Pricing_Portal" field="Root" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+      <uxc:Structure id="yHMzrN97aAXe1rb5ntcB4S" name="$System">
+        <base:PropertyBag id="4Qk0f2V4ycKUFN0NbbSsZG">
+          <base:Property id="9q7I7qy5u3D482wp6B5Qij" name="BINDINGSTATUS" value="Internal" />
+        </base:PropertyBag>
+        <uxc:Bind id="fU52JjJw_KluqR9Gsg6Z_G" proxyName="Pricing_Portal" field="Root" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+        <uxc:DataField id="WvN8FUQt4R426t1ZgYi3Ow" name="IsThingDirty" type="boolean">
+          <base:PropertyBag id="1bBlMCDv7zUaw55ySY5L0E">
+            <base:Property id="jqxxU5E61Nl5U2M1AAp7oV" name="BINDINGSTATUS" value="Internal" />
+          </base:PropertyBag>
+        </uxc:DataField>
+      </uxc:Structure>
+      <uxc:Structure id="5M2MEA0fsFD5ts0QKGQOK4" name="$ThingHeader">
+        <base:PropertyBag id="My0WYijXx3oWL90uz5on5I">
+          <base:Property id="Rs0sWgCgRnJ7TIJJReR5Q3" name="USERCHANGEDNAME" value="True" />
+          <base:Property id="cs2Wf0H3AaaOCjt0ZL9dMj" name="ISFRAMEWORKFIELD" value="True" />
+        </base:PropertyBag>
+        <uxc:Bind id="fU52JjJw_KluqR9Gsg6Z_G" proxyName="Pricing_Portal" field="Root" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+        <uxc:DataField id="QaFoeuZEo7c0gXm6C54nkt" name="ID" cctsType="identifier" type="string">
+          <base:PropertyBag id="7hgW0N25V8fDgj997lqCl6">
+            <base:Property id="KJmfDSmDhqwVeZ3_qlasKO" name="USERCHANGEDNAME" value="True" />
+            <base:Property id="qUEde$9HZxGeU1EC7nE31L" name="ISFRAMEWORKFIELD" value="True" />
+          </base:PropertyBag>
+          <uxc:Bind id="evrUaMg3y4oOtk06ZwX7fp" proxyName="Pricing_Portal" field="-~NodeID" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+        </uxc:DataField>
+        <uxc:DataField id="0r5IT$850v7_FTxM3Uiny" name="IdentityID" cctsType="identifier" type="string">
+          <base:PropertyBag id="066OrpkR$hGp53Om723Pe3">
+            <base:Property id="5hBN_YWFK9Wegx2_yzreIJ" name="USERCHANGEDNAME" value="True" />
+            <base:Property id="dYZA2RRjAiCam9uq64aTQG" name="ISFRAMEWORKFIELD" value="True" />
+          </base:PropertyBag>
+        </uxc:DataField>
+        <uxc:DataField id="G00IlRTw5aHaB037zvIshO" name="Icon" type="string">
+          <base:PropertyBag id="4c5N28ggd3EcW3c9YtGx1J">
+            <base:Property id="FFNFkXkolH32XNYX0k803K" name="USERCHANGEDNAME" value="True" />
+            <base:Property id="qDc397o2vC6Goq94is6XLC" name="ISFRAMEWORKFIELD" value="True" />
+          </base:PropertyBag>
+        </uxc:DataField>
+        <uxc:DataField id="XHdcD39nSnvtqF8t2YikK7" name="IconSmall" type="string">
+          <base:PropertyBag id="gH4q4Me77N1St1xXX5054c">
+            <base:Property id="lrTon3rph3eAdf9h283XPi" name="USERCHANGEDNAME" value="True" />
+            <base:Property id="0UE220r717hAci6pV8iACe" name="ISFRAMEWORKFIELD" value="True" />
+          </base:PropertyBag>
+        </uxc:DataField>
+        <uxc:DataField id="CiuB5$fbaz31Pkq32_TVqB" name="IconLarge" type="string">
+          <base:PropertyBag id="LNXwVKF8tOEoKFA7pB3bK6">
+            <base:Property id="v2wv3uUh4HCQicCx5KOTaO" name="USERCHANGEDNAME" value="True" />
+            <base:Property id="p557V9sGI67Pnq3qEY7I08" name="ISFRAMEWORKFIELD" value="True" />
+          </base:PropertyBag>
+        </uxc:DataField>
+        <uxc:DataField id="BuTtz3ZfHdmfk3cDZW51PE" name="Description" type="string">
+          <base:PropertyBag id="DQwETKQBDyQx52K1tdk1B8">
+            <base:Property id="N1kld32xfpsDeI49snrGHM" name="USERCHANGEDNAME" value="True" />
+            <base:Property id="FZxW$AES7E88FlWiC_dnSN" name="ISFRAMEWORKFIELD" value="True" />
+          </base:PropertyBag>
+        </uxc:DataField>
+        <uxc:DataField id="6iV3MbRgFG0oyhwibquxCc" name="AdditionalDescription" type="string">
+          <base:PropertyBag id="7K4UP02PNVV0iRGi8i6487">
+            <base:Property id="Ly98Rpc7zHuhX3FyYuBvVR" name="USERCHANGEDNAME" value="True" />
+            <base:Property id="yj22po08n43k05Vbv9pq71" name="ISFRAMEWORKFIELD" value="True" />
+          </base:PropertyBag>
+        </uxc:DataField>
+      </uxc:Structure>
+      <uxc:Structure id="lTHP1Q6bhaU$$49iEOZLa0" name="Pricing_Portal">
+        <base:PropertyBag id="L8VVW8xVQqYij71L25e37G">
+          <base:Property id="4RQDgq6974ITk$0TY98zem" name="BINDINGSTATUS" value="OK" />
+          <base:Property id="7PHAcTCCqqMkE$d08kdL6W"  name="USERCHANGEDNAME" value="False" />
+        </base:PropertyBag>
+        <uxc:Bind id="4G81Zg8VaaAfnw28zG5B0G" proxyName="Pricing_Portal" field="Root" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+        				<uxc:DataField id="eM2WfGfdVkmqUw7h4PK7Pw" name="StatusSchemaName" type="string" cctsType="identifier">
+							<base:PropertyBag id="9VymeOpRAEm5fizGB6IcWA">
+					<base:Property id="nElHpv1qFkm18ekBYe0kWQ" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="dxomAZmzEke0AvF3y1S5ug" name="UITEXTID" value="" />
+					<base:Property id="seDekE1Vt0yRoxrcA0Vp7Q" name="XFLD" value="" />
+					<base:Property id="HiMQw0J3pUygiJZA08E3Yg" name="XCOL" value="" />
+					<base:Property id="x7A25uvg30uOZ8R9X97Whg" name="XTOL" value="" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="8VAVrIvdUEWD6hvmklVjPQ" proxyName="Pricing_Portal" field="-~StatusSchemaName" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+				</uxc:DataField>
+								<uxc:DataField id="AInI6hZBlkG_xFAPHhHhrw" name="PricingID" type="string" cctsType="identifier" thingType ="YTFS8S0TY_APPR_TT">
+							<base:PropertyBag id="toUGy9YzBEaAy3y9UP42nA">
+					<base:Property id="o1_IudG9G0quaXzoIPiLaA" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="b9vI1B1EJ0W9A8AkDyfRuA" name="UITEXTID" value= "YTFS8S0TY_8E92A0A6E84C3C57" />
+					<base:Property id="IbCfAfhpUkO4yAjMNMBr6w" name="XFLD" value="Pricing ID" />
+					<base:Property id="P_lEwyTw1kGKw6eJih492A" name="XCOL" value="Pricing ID" />
+					<base:Property id="6pdPLK30bkSsgRb0iWfESA" name="XTOL" value="Pricing ID" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="1fjLJ7CQCUuS5BT_zhlewQ" proxyName="Pricing_Portal" field="-~PricingID" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+				</uxc:DataField>
+								<uxc:DataField id="MhSMjrKm9k6Wb1nwCtyGrQ" name="Combination" type="string" cctsType="code">
+							<base:PropertyBag id="DOTieVHEAkK8xoAlpE11Xg">
+					<base:Property id="VPv2aEJyAE6zvAXjE7GGxg" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="4INKKD9BB0Wt22zAq9sZMQ" name="UITEXTID" value= "YTFS8S0TY_A6A9C472B21074D7" />
+					<base:Property id="3Ae5csOpeUKjPmgmfPX_ug" name="XFLD" value="Combination Type" />
+					<base:Property id="KFvxnyOGoEusNAmhC2Lniw" name="XCOL" value="Combination Type" />
+					<base:Property id="EFoSech52k2U5hENumHe4A" name="XTOL" value="Combination Type" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="P6gTa4qYuUCiCug3Xi1V9g" proxyName="Pricing_Portal" field="-~Combination" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+					<uxc:Codelist id="ucwbTsofl0_GHqYfpN1naQ" type="static" typeName="KeyCombinationCode" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+				</uxc:DataField>
+								<uxc:DataField id="OKhXGVTXPEqYD1T3IlFFQw" name="Status" type="string" cctsType="code">
+							<base:PropertyBag id="SYTuadYZb0emcgT6TnN2KQ">
+					<base:Property id="fijf_T9xdEGwMoG7YC1HXg" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="qVl33FmG20CJzhl9JhNN_Q" name="UITEXTID" value= "YTFS8S0TY_5723968A11E26F71" />
+					<base:Property id="nb4qNURW8k68XYC24sHvMg" name="XFLD" value="Status" />
+					<base:Property id="46lbq5LhF0Wl59Pv3C4o1A" name="XCOL" value="Status" />
+					<base:Property id="6JSoQPUIKEW9jJpFjrYtTw" name="XTOL" value="Status" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="QqioXPxEGEeSjYOCF1H6EA" proxyName="Pricing_Portal" field="-~Status" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+					<uxc:Codelist id="ZbR4Zcv7HUeRBQAjqupbHw" type="static" typeName="StatusCode" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+				</uxc:DataField>
+								<uxc:DataField id="SOkQyp1YXkeKFxIpn8JqRw" name="Type" type="string" cctsType="code">
+							<base:PropertyBag id="3IKR91uplUeCFostr6GtyQ">
+					<base:Property id="2PcNYYDYr0m8IEHjFjhbUw" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="lwSsSMB6XkapV0nab946Sg" name="UITEXTID" value= "YTFS8S0TY_B450F952CEF925BE" />
+					<base:Property id="JIKO2swYoUW_lHZcPDo_oQ" name="XFLD" value="Type" />
+					<base:Property id="blzOevKiJ0iuXzYiCdXT2Q" name="XCOL" value="Type" />
+					<base:Property id="d0VYK2Mev0GAQYZAj87a4Q" name="XTOL" value="Type" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="LRLZlLoCWECF_xrst7ev0g" proxyName="Pricing_Portal" field="-~Type" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+					<uxc:Codelist id="TEqNvOuUzkyHPyGTGxOmHQ" type="static" typeName="TypeCode" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+				</uxc:DataField>
+								<uxc:DataField id="7jUMFwAq5ki8JOIy6DM4Lg" name="AccountManager" type="string" cctsType="identifier">
+							<base:PropertyBag id="BxdQYpcuSECUKftbXenrZA">
+					<base:Property id="MDjeQKGf8Uy_4m1wHx7IQA" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="jodE_ZlKiUmoxd5izP0jqg" name="UITEXTID" value= "YTFS8S0TY_1CA9CA82F1DDCC23" />
+					<base:Property id="qMO8bt01A0WrmrRPmrB95Q" name="XFLD" value="Account Manager" />
+					<base:Property id="ICPJhbOAhUy1MgxmtP_8dQ" name="XCOL" value="Account Manager" />
+					<base:Property id="UUbQIzDFg0_kCOjpApfKAA" name="XTOL" value="Account Manager" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="5R4hGhRlh0GX4hc9DzPJ_A" proxyName="Pricing_Portal" field="-~AccountManager-~content" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+				</uxc:DataField>
+								<uxc:DataField id="vNOMCYoUTkixKhqAjQVXvQ" name="Manager" type="string" cctsType="identifier">
+							<base:PropertyBag id="VyaoccAQfUq1XLLDZFco6g">
+					<base:Property id="FVEcGKQ3y0CIAJP03Nveiw" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="FqQTIjBdF0mo_fCVpH8r6A" name="UITEXTID" value= "YTFS8S0TY_19305F822BB102F8" />
+					<base:Property id="kpewcGDM40aCxovGwr_iMQ" name="XFLD" value="Manager" />
+					<base:Property id="zscZe50SbkO3GW4A3fbcBA" name="XCOL" value="Manager" />
+					<base:Property id="h_UyE_4AdU6AB6DiMwJmCA" name="XTOL" value="Manager" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="7D4jzrOOTEC33C6XFb8epA" proxyName="Pricing_Portal" field="-~Manager-~content" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+				</uxc:DataField>
+								<uxc:DataField id="K922JOtO8EmGOfQZTzBitw" name="Requester" type="string" cctsType="identifier">
+							<base:PropertyBag id="zFi7_reACEmJfGp8WyY1VA">
+					<base:Property id="L9f5GMA4yUqVC9yykWvsFQ" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="X93yVwZfJUitqYCZ1Eo7EA" name="UITEXTID" value= "YTFS8S0TY_C519BD2206D20719" />
+					<base:Property id="cAq8yTtKIkC5cxu5yhBskA" name="XFLD" value="Requester" />
+					<base:Property id="_IMToAR4WUCu2bs34cGmNQ" name="XCOL" value="Requester" />
+					<base:Property id="HD9gBSor2UGFJ6_c1AqkXg" name="XTOL" value="Requester" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="9YQD1sAWqUKpW_W19mskmg" proxyName="Pricing_Portal" field="-~Requester-~content" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+				</uxc:DataField>
+								<uxc:DataField id="ICGQUjXBo0KxsVYJrY9aOw" name="StartDate" type="date" cctsType="date">
+							<base:PropertyBag id="oWEVvAKLj0OB5yDU4Nzq3Q">
+					<base:Property id="ESDBAq4lIkW3ATUR65kqOw" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="GXZoapavBki4WRS1dZXIow" name="UITEXTID" value= "YTFS8S0TY_4173B184108F747A" />
+					<base:Property id="jMvTf0KO602pjoXftMwkXQ" name="XFLD" value="Start Date" />
+					<base:Property id="0CRro4PkRkKGFLroUXjUqg" name="XCOL" value="Start Date" />
+					<base:Property id="8IeaZu51aEKMSWFHFPf95w" name="XTOL" value="Start Date" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="qpgJFtyKl0KPzR7HDNJ4Ag" proxyName="Pricing_Portal" field="-~StartDate" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+				</uxc:DataField>
+								<uxc:DataField id="KViid3rgMUuJxC2UxavKIg" name="EndDate" type="date" cctsType="date">
+							<base:PropertyBag id="smJtsZZNpECdcqpOmt5Llw">
+					<base:Property id="6pGaTWm63EqwNYy_VW1ygA" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="mmJylPZfx0C8PApOAFWdPw" name="UITEXTID" value= "YTFS8S0TY_1BCC39667B4A7D3A" />
+					<base:Property id="eSOXCZuvuUiwUakx2_XJtQ" name="XFLD" value="End Date" />
+					<base:Property id="IqV1GoUIekqL3OjHozA7EQ" name="XCOL" value="End Date" />
+					<base:Property id="Zt6o5cYVO0azIBo2XgtzIA" name="XTOL" value="End Date" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="pkfD_IPdJU26G5ys9wO92w" proxyName="Pricing_Portal" field="-~EndDate" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+				</uxc:DataField>
+								<uxc:DataField id="qsgPI9USBEyVERkzVNAPmA" name="Duration" type="integer" cctsType="value">
+							<base:PropertyBag id="Nwpv_mICA0OOWOp6LiaaAQ">
+					<base:Property id="hVGeSAOznEK3rVFRPBqEOg" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="u_3lXsYamEGADChXG3mdJA" name="UITEXTID" value= "YTFS8S0TY_80A5FE1C29A2516C" />
+					<base:Property id="_2nGPOHSwEe1oC54LxA2xw" name="XFLD" value="Duration" />
+					<base:Property id="yu2wVVI5z0a_7uWBNWDNvw" name="XCOL" value="Duration" />
+					<base:Property id="fAP43_66Y0aNOduS7pglGA" name="XTOL" value="Duration" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="xyXZnhcruk_R6J7B9tENHw" proxyName="Pricing_Portal" field="-~Duration" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+				</uxc:DataField>
+								<uxc:DataField id="HoEgbNNvOECwFUbtSewoBw" name="SalesOrganization" type="string" cctsType="identifier">
+							<base:PropertyBag id="IwMMXqta30mNBL8FrGBe_A">
+					<base:Property id="1InCHq0YRUect4Ub1R1Z6A" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="DQ5WA60yGU6boTcHKUSWoA" name="UITEXTID" value= "YTFS8S0TY_06E1E23A889F5230" />
+					<base:Property id="MZPaUDjiN0_t_xLqkE9iWg" name="XFLD" value="Sales Organization" />
+					<base:Property id="ULxmGRxUnEaf_4UAIMn9sA" name="XCOL" value="Sales Organization" />
+					<base:Property id="cHNsAcq2tE6VKWwXMTOiPg" name="XTOL" value="Sales Organization" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="j7qLJXDV30KPysVfAWjaYg" proxyName="Pricing_Portal" field="-~SalesOrganization" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+				</uxc:DataField>
+								<uxc:DataField id="JE7NZcZfMkOwS8uDuNmoZQ" name="Primary_Approver" type="string" cctsType="identifier">
+							<base:PropertyBag id="A7pca7rufEmVBPP7sPptFw">
+					<base:Property id="O0OyZxLQqkCZY39kE0CCIA" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="AXTbUAyPxEGRV3qurkg7MA" name="UITEXTID" value= "YTFS8S0TY_CF3D04832EEFB266" />
+					<base:Property id="A9_h5aVMzE6j5EoRHrqSsg" name="XFLD" value="Primary Approver" />
+					<base:Property id="ACzE1o_2xUaNus2vKtgxhQ" name="XCOL" value="Primary Approver" />
+					<base:Property id="wcYJdoLbjU6ann1w6gu3TQ" name="XTOL" value="Primary Approver" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="J0oFRT6vzUOEsp6CKXavXA" proxyName="Pricing_Portal" field="-~Primary_Approver-~content" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+				</uxc:DataField>
+								<uxc:DataField id="osuEaIU_8UORHocME9LJ0Q" name="SoldToPartyID" type="string" cctsType="identifier">
+							<base:PropertyBag id="az_rj77awU_dnhFDLXvxNg">
+					<base:Property id="gzqulzZyjE6vAxXja5qbUw" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="NyCASJqmCUKSbyq1ZtmQnw" name="UITEXTID" value= "YTFS8S0TY_AEE5C1F2A3B131AC" />
+					<base:Property id="9knY8xkCPkiWLK1HBO_Szg" name="XFLD" value="Sold-To Party" />
+					<base:Property id="lWox7bXgG0isY9rAX01Leg" name="XCOL" value="Sold-To Party" />
+					<base:Property id="nQSc0wC0dEmJ5VUhFqT2BQ" name="XTOL" value="Sold-To Party" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="Q2uLUnN400Si_2bcBYUEzA" proxyName="Pricing_Portal" field="-~SoldToPartyID" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+				</uxc:DataField>
+								<uxc:DataField id="Zjb1A3G1h0KpzzW7eI1bmQ" name="ShipToPartyID" type="string" cctsType="identifier">
+							<base:PropertyBag id="m0EME2liN0WFOaOkKtIZww">
+					<base:Property id="3ptAHphgvEG7O8SdfVuBug" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="6WADmpDbPEW6AL_mV8oSDA" name="UITEXTID" value= "YTFS8S0TY_C8EBDD45AFBD708A" />
+					<base:Property id="av2aH6OAf02C7yln9pYLYA" name="XFLD" value="Ship-To Party" />
+					<base:Property id="QtqnjRg1B0iK2cPI2nUcGw" name="XCOL" value="Ship-To Party" />
+					<base:Property id="JxpPAFvArEmAs1veangJPw" name="XTOL" value="Ship-To Party" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="r3Ox08LUkkyjEzVpXPmifw" proxyName="Pricing_Portal" field="-~ShipToPartyID" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+				</uxc:DataField>
+								<uxc:DataField id="4H_QjLubAUyO5AiIfsEIOA" name="MaterialID" type="string" cctsType="identifier">
+							<base:PropertyBag id="deYFAzCWZEGAzpqAIY0SYQ">
+					<base:Property id="7M9I8yaJ8k2it5Ezz9QtQA" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="oyLJFS6n5ESartEymwdiMQ" name="UITEXTID" value= "YTFS8S0TY_9115AE6235FB5F6F" />
+					<base:Property id="EfWrr9OoHES3p6K2SYFrTw" name="XFLD" value="Material" />
+					<base:Property id="V0P0f5R0DU2IGwFjpb1pNg" name="XCOL" value="Material" />
+					<base:Property id="xdf1JQUPHEOM0CqPveuYMA" name="XTOL" value="Material" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="imAXJgdNxUuO7eDQx9o47g" proxyName="Pricing_Portal" field="-~MaterialID" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+				</uxc:DataField>
+								<uxc:DataField id="ZNdmKNxhRUmuOGpjqLjFYw" name="ShippingCondition" type="string" cctsType="code">
+							<base:PropertyBag id="MK2LfQSAu0WjwVdCPilBsQ">
+					<base:Property id="VfQIcZqS6E_2WmrKGAk4OQ" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="SJexc7xOsk6HuAPtPd7dUg" name="UITEXTID" value= "YTFS8S0TY_0CF1C9AB426EA1F0" />
+					<base:Property id="8Y7D2i00TUGpXw5V6g8WHg" name="XFLD" value="Shipping Condition" />
+					<base:Property id="1j0pLm9e3kekHNnRYeI38w" name="XCOL" value="Shipping Condition" />
+					<base:Property id="si0sqYHneUaKZDyzuWz4qw" name="XTOL" value="Shipping Condition" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="l4IJ0Gf9AUGfN8iLHjRrUQ" proxyName="Pricing_Portal" field="-~ShippingCondition" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+					<uxc:Codelist id="zga5f4aHSEe3svk9edjjhA" type="static" typeName="ShippingConditionCode" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+				</uxc:DataField>
+								<uxc:DataField id="OlFrM8lLbE_H8tspumUWAg" name="CustomerConditionGroup" type="string" cctsType="code">
+							<base:PropertyBag id="gDWXIbaS6k6WueV9SXJ7bQ">
+					<base:Property id="f9gOAA8ul0_6ozqkzgIXXw" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="3crihJFKxkSDAJdNy048pA" name="UITEXTID" value= "YTFS8S0TY_FE595951530EEAE1" />
+					<base:Property id="rPgqd5S5EE_pI0SQkW6eog" name="XFLD" value="Customer Condition Group" />
+					<base:Property id="1PeCAN5jA0qNA_56kKdG9g" name="XCOL" value="Customer Condition Group" />
+					<base:Property id="sdf475H7vkGDDRauJjVWHQ" name="XTOL" value="Customer Condition Group" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="6hB13Qd0hEGBO4vzR1NNog" proxyName="Pricing_Portal" field="-~CustomerConditionGroup" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+					<uxc:Codelist id="jDMXAojNhU_l03l0eD5j8g" type="static" typeName="CustomerConditionCode" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+				</uxc:DataField>
+								<uxc:DataField id="r1cq12ob_0el_YkeKM2anA" name="Incoterm" type="string" cctsType="code">
+							<base:PropertyBag id="tOU10Q54qk63qiMtX3fjVg">
+					<base:Property id="y0XADfvEfkSHI60dRXrbYQ" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="GmYpsMk5NkikAwGvsnflbQ" name="UITEXTID" value= "YTFS8S0TY_0D7455130D8055B3" />
+					<base:Property id="SoesuPSCMEuqy6_ZBG3teA" name="XFLD" value="Incoterm" />
+					<base:Property id="SNP4wxZr5kSjtnSQJY5X6g" name="XCOL" value="Incoterm" />
+					<base:Property id="cqoHkY6b2EqgI1y4ABgV4Q" name="XTOL" value="Incoterm" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="6O2A315uNU6r5xLvWqGEUg" proxyName="Pricing_Portal" field="-~Incoterm" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+					<uxc:Codelist id="HmgC4yPUt0yaAO4mQm0nAw" type="static" typeName="IncotermCode" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+				</uxc:DataField>
+							<uxc:Structure id="YSL2rJOv5U_abaArLaX_4A" name="Quantity" cctsType="none">
+										<base:PropertyBag id="vp1Mzf_ag0OxuwZKLl0Gvw">
+					<base:Property id="wtHU66FuMkCEjy3zEFwwgQ" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="JjqLOTiNCEygIKqllc9owQ" name="UITEXTID" value= "YTFS8S0TY_87C03057F6AA086E" />
+					<base:Property id="49yFM0CYwUO0AsZmInXqBw" name="XFLD" value="Quantity" />
+					<base:Property id="SIvSO8EweEStARE0gwQixg" name="XCOL" value="Quantity" />
+					<base:Property id="uLIwAWlim0mERbvZ0kvefQ" name="XTOL" value="Quantity" />
+					</base:PropertyBag>
+						<uxc:Bind id="GhsPQchxy0SoDCawvhjIcg" proxyName="Pricing_Portal" field="-~Quantity" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+									<uxc:DataField id="fQeSAsf8X0GbK6OWyR4NOQ" name="content" type="float" cctsType="quantity">
+								<base:PropertyBag id="OAjkjApnXkqRR3T7thx1Gw">
+						<base:Property id="kZwVtt3Qd0qAGeOJNgESrQ" name="BINDINGSTATUS" value="OK" />
+						<base:Property id="tzOuFE4qTECjbIn48dc43A" name="UITEXTID" value= "YTFS8S0TY_87C03057F6AA086E" />
+						<base:Property id="yBU3IF_fakiNzU1OFfq8rQ" name="XFLD" value="Quantity" />
+						<base:Property id="TlTiYQ7_DEGsHz1NihDARw" name="XCOL" value="Quantity" />
+						<base:Property id="JlUIPcT8NEiVqBoiBIjgaQ" name="XTOL" value="Quantity" />
+						</base:PropertyBag>
+						
+						<uxc:Bind id="VxIw5ApsTEa4COgn9fGL3Q" proxyName="Pricing_Portal" field="-~content" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+					</uxc:DataField>
+									<uxc:DataField id="Mf0JpbjhSUmKbj9LVwMK7w" name="unitCode" type="string" cctsType="code">
+								<base:PropertyBag id="SnoXF0l9TkKuZSMdni8xPQ">
+						<base:Property id="W6tOHHBkHUS9r82qkZC58A" name="BINDINGSTATUS" value="OK" />
+						<base:Property id="x7oInoS7YEGRZzAtN0kdOw" name="UITEXTID" value="" />
+						<base:Property id="Mi6vFOKdxkSSIXSME8yzLg" name="XFLD" value="" />
+						<base:Property id="0vxuUt11AEaKoYYM3y643Q" name="XCOL" value="" />
+						<base:Property id="UGLFjk1rI0CV5v0AXwW4Vw" name="XTOL" value="" />
+						</base:PropertyBag>
+						
+						<uxc:Bind id="9a_IsivfY0mFsb75XwB8CA" proxyName="Pricing_Portal" field="-~unitCode" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+						<uxc:Codelist id="1FM9zdP1IUSvjfy1aNgfKw" type="static" typeName="MeasureUnitCode" esrNamespace="http://sap.com/xi/AP/Common/GDT" />
+					</uxc:DataField>
+				</uxc:Structure>
+							<uxc:Structure id="EWU_AWbXqU_AvVHmSdjOGg" name="PriceAmount" cctsType="none">
+										<base:PropertyBag id="N_JPiGNlA0ypffCUIPqAbg">
+					<base:Property id="AyjJLtDqG0CnWhHVD3pgng" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="xSLphrhkTUa19XZTive4Ig" name="UITEXTID" value= "YTFS8S0TY_10FF6DD4E5173E64" />
+					<base:Property id="dRLgmeYj5kqcxSwBO5gbiw" name="XFLD" value="Price Amount" />
+					<base:Property id="fdZXfAaYq06Op1_tt87VNw" name="XCOL" value="Price Amount" />
+					<base:Property id="WW8mZ282xEyy4TLIMstxug" name="XTOL" value="Price Amount" />
+					</base:PropertyBag>
+						<uxc:Bind id="mjInFNUdVUC5HuCi6Ecuhg" proxyName="Pricing_Portal" field="-~PriceAmount" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+									<uxc:DataField id="Zv9PnYEw2USDNG3AmTl2lA" name="content" type="float" cctsType="amount">
+								<base:PropertyBag id="GrVbdB8F_kyedzWR9SKOPg">
+						<base:Property id="LUPtMtJrZ06LUAUuIZM14g" name="BINDINGSTATUS" value="OK" />
+						<base:Property id="zH2G44kHn0K69162dsK96g" name="UITEXTID" value= "YTFS8S0TY_10FF6DD4E5173E64" />
+						<base:Property id="5DKxLMYY2EmFKG4Ay4WaPg" name="XFLD" value="Price Amount" />
+						<base:Property id="d_88DYsO40yrm6J1i76k3g" name="XCOL" value="Price Amount" />
+						<base:Property id="_8cVRl9CukOdKIDOCp5jAA" name="XTOL" value="Price Amount" />
+						</base:PropertyBag>
+						
+						<uxc:Bind id="MRPlK7fYcUSb45w2BDbz_Q" proxyName="Pricing_Portal" field="-~content" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+					</uxc:DataField>
+									<uxc:DataField id="BKA0KOmdpEaSUrTNgDjCrA" name="currencyCode" type="string" cctsType="code">
+								<base:PropertyBag id="v8AeTxpzZkmewGAPNCy4Gg">
+						<base:Property id="32tLcIfBGESU0gUwHdpuUQ" name="BINDINGSTATUS" value="OK" />
+						<base:Property id="ShYnJNYApUKwTmp4eANyvw" name="UITEXTID" value="" />
+						<base:Property id="zpA4Y0YpX0iP7fPcKDvWrQ" name="XFLD" value="" />
+						<base:Property id="C7j1hx_3DE2SuhoR1r9zcA" name="XCOL" value="" />
+						<base:Property id="XM3_12SBkEGo96AkYyo4Lg" name="XTOL" value="" />
+						</base:PropertyBag>
+						
+						<uxc:Bind id="XnAnvISoKUGltZr0G89hRw" proxyName="Pricing_Portal" field="-~currencyCode" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+						<uxc:Codelist id="KqHvGxDZPkqjYWDNGnYIHw" type="static" typeName="CurrencyCode" esrNamespace="http://sap.com/xi/BASIS/Global" />
+					</uxc:DataField>
+				</uxc:Structure>
+								<uxc:DataField id="P0mvbTNsAEG9K6PMvmVFuw" name="ApprovalStatus" type="string" cctsType="code">
+							<base:PropertyBag id="GMAI1yZ2IU_yi0yTBIDlZg">
+					<base:Property id="Z6BnJ1y0tUeTTFuXAYlgWQ" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="89Ay3qx5Y0K21wFtynRimA" name="UITEXTID" value="" />
+					<base:Property id="27M1DBPIY02iLqOvhqLqFg" name="XFLD" value="" />
+					<base:Property id="3cEsXW7eqUq6AUAu4qSqpA" name="XCOL" value="" />
+					<base:Property id="wVDhzC70vUeCEUHAbS3Frg" name="XTOL" value="" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="xqAL82bPqEmZcV7Cv0pSYQ" proxyName="Pricing_Portal" field="-~ApprovalStatus" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+					<uxc:Codelist id="ub2RaxhlgkyWEJ5k9hSOAA" type="static" typeName="ApprovalStatusCode" esrNamespace="http://sap.com/xi/AP/Common/GDT" />
+				</uxc:DataField>
+          <uxc:DataField id="pITz1GH14ZjnXbLz8f6HiE"  name="NodeID" type="string">
+          <base:PropertyBag id="3PL$Ow4vA3VfnmrRTONZr6">
+            <base:Property id="ywMfC4eBzAEIkD3opF6yeC" name="BINDINGSTATUS" value="OK" />
+            <base:Property id="72j6NwC79mSWzwRPJEcd1k" name="USERCHANGEDNAME" value="True" />
+          </base:PropertyBag>
+          <uxc:Bind id="46WBbwzHdWwBhaaI_gkPIA" proxyName="Pricing_Portal" field="-~NodeID" esrNamespace="http://refsystems.sap.com/YTFS8S0TY_" />
+        </uxc:DataField>
+      </uxc:Structure>
+              <uxc:DataField id="hmzoBkgc$tZqas1XptKKUz" name="InportKey" type="string">
+          <base:PropertyBag id="jkgKp_Fb6UuIMSYlRcPcGs">
+            <base:Property id="CNSX64vJcNT7IFnNo_EolZ" name="BINDINGSTATUS" value="ToBind" />
+          </base:PropertyBag>
+        </uxc:DataField>
+            <uxc:Structure id="OZ4_ODkvytv2sQ$BNb3uvF" name="UIState">
+        <base:PropertyBag id="e50z9Y899G4090z7GYbTc9">
+          <base:Property id="NA3J68J00vYwAMnGkJw4EK" name="BINDINGSTATUS" value="Internal" />
+        </base:PropertyBag>
+        <uxc:DataField id="82eMzfZcGUS3oztMq2b0M4" name="ViewSwitchSelectedItem" type="string">
+          <base:PropertyBag id="1VV9M2D_ibbe_NRd0GMvVr">
+            <base:Property id="Q6QoKYwW150E08swmvP2N1" name="BINDINGSTATUS" value="Internal" />
+          </base:PropertyBag>
+        </uxc:DataField>
+      </uxc:Structure>
+      <!--<uxc:DataField id="qAM5n6U3T9AVRn3OZb0B8L" name="@ErrorOccured" type="boolean">
+        <base:PropertyBag id="4TkwGr_G_gw4Km15xjzzTK">
+          <base:Property id="Ni2urLiIjO3x6d4uu1PLEc" name="BINDINGSTATUS" value="Internal" />
+        </base:PropertyBag>
+      </uxc:DataField>
+      <uxc:DataField id="JQPpONacYcqyD2fvl6MQ9m" name="@TransitionErrorOccurred" type="string">
+        <base:PropertyBag id="Mw8m2pLqynqXUpUPMCVO9i">
+          <base:Property id="IG8wmGKk3rm6UyoZWi3eqO" name="BINDINGSTATUS" value="Internal" />
+        </base:PropertyBag>
+      </uxc:DataField>-->
+    </uxc:DataModel>
+    <uxc:EventHandlers id="j3iM1cVY3vOycmX2kpmQGU">
+      <uxc:EventHandler id="CV9dOPatdk127vCdnQgTVG" name="OnSave">
+        <uxc:WindowAction id="4b5Jcu0nm9Co435k1D3sCY" name="SaveOperation" action="Save" />
+      </uxc:EventHandler>
+      <uxc:EventHandler id="w4khF26lxSHLPznYgeuuQs" name="OnCancel">
+        <uxc:RestartClient id="6DRz4BIm2106C72fGRIDgD" name="CancelOperation" />
+      </uxc:EventHandler>
+              <uxc:EventHandler id="SVmLeabjfKjwXxMPT3s8Dc" name="EditHandler">
+          <uxc:BoOperation id="VzMjWGSiR$G2hbgJWY0EOI" name="Operation" operation="Read">
+            <uxc:BoOperationParameter id="i5fJlOIj$PMDZqBYSgngiY" name="Key" bind="/Root/InportKey" type="keyNavigation" />
+          </uxc:BoOperation>
+        </uxc:EventHandler>
+          </uxc:EventHandlers>
+    <uxc:Queries id="RDpYJlLSzJ6PZS8a9MmtH2" />
+    <uxc:DefaultSets id="w2Q80WlXF9Lhj8Mi0p480z" />
+  </uxc:Implementation>
+
+  <!--<uxc:Navigation id="f7WJ2OTbyhgMnIHL1LM3WF" />-->             
+               
+  <uxc:EmbeddedComponents id="ut311$23aZSjjroF4373d2">
+    <uxc:EmbeddedComponent id="gAdIf_vuuMvQv6FlPjBVZd" embedName="LatestFeeds_EC" targetComponentID="/SAP_BYD_APPLICATION_UI/Reuse/Feeds/LatestFeeds_EC.EC.uicomponent" parentDependency="no" newSession="true">
+      <!--<uxc:Parameter id="E3UhxHUhT37S7OyoxDrSij" name="MaxResults" constant="5">
+        <base:PropertyBag id="q_5uBEfVB9YrfU8D0uKB5Y">
+          <base:Property id="eeb5eVE2vT48blMTE7JXUz" name="ConfigParameterId" value="vcIZH4qnFqwEgPhCpRWn3G" />
+        </base:PropertyBag>
+      </uxc:Parameter>-->
+    </uxc:EmbeddedComponent>
+    <uxc:EmbeddedComponent id="x9Xp4spa4GfSnpvc1eJLY6" embedName="FeedsList_EC" targetComponentID="/SAP_BYD_APPLICATION_UI/Reuse/Feeds/FeedsList_EC.EC.uicomponent" parentDependency="no" newSession="true">
+    </uxc:EmbeddedComponent>
+  </uxc:EmbeddedComponents>
+
+  <uxc:RBAMData id="UATxtzdcEQ3JiNtkpcVx1E" accessCheckMode="PrivilegedExceptAccessControlledBusinessObjects">
+    <uxc:AccessControlledBusinessObject id="gD44PORFO1bDukyQxTywo7" BO="Pricing_Portal" BONS="http://refsystems.sap.com/YTFS8S0TY_" unrestrictedAccess="true" />
+  </uxc:RBAMData>
+  
+  <Tags id="7UGpWxSINKU9cuGqT0IWHG">    
+          <Tag id="vTW13GX7tKImeZV8IAa7hG" value="STD" attribute="DEVC">
+        <base:PropertyBag id="BNxF_QTLzqMmhbG73jQDam">
+          <base:Property name="ValueDescription" id="g7zpBuW2TKw2_ZyUMzbgkm" value="Desktop"/>
+        </base:PropertyBag>
+      </Tag>
+      <Tag id="fshOCmvdH4IJtWr5gFaFSm" value="TAB" attribute="DEVC">
+        <base:PropertyBag id="dyuCOBOCGqQewCnKvVhBmG">
+          <base:Property name="ValueDescription" id="dTJzE8WgY4oHqTcgxPn6vm" value="Tablet"/>
+        </base:PropertyBag>
+      </Tag>
+        </Tags>
+
+  <UXView id="BbSVKr6QTk1ZuqnSPusB6e" patternType="quickThingInspector">
+    <uxv:ThingHeaderRegion id="gg9tVIeDdgfmStCbVDFdac">
+      <uxv:Title id="ZZIRNxegKfjbPfOdNXds4D" textPoolId="6d78ba4a44ee4825b05ae0b8f3c8692b" />
+      <uxv:CardControl id="MI7FVr2$arcHVfRd3juxpA" name="CardControl" displayMode="Standard">
+        <uxv:PrimaryText id="fWuYya2m452tt7DuQUxZSi" textPoolId="76fbb966af4e4d3286917a85952d50b9" />
+        <uxv:SecondaryText id="Kp5NT4zCBa1kPoOAZR_1oe" textPoolId="ce0df2a204704609a26d6859b1987bfc" />
+      </uxv:CardControl>
+      <uxv:ToolBar id="HaOwHoOFlrCyf9veGdehXe" />
+      <uxv:ExtendedContentRegion id="MFWkLRyPaEBVEFpKGgAqgF" columns="1" rows="1">
+        <uxv:PaneContainer id="lUVTiZWklv$1Gs2BsJWzRt" column="0" row="0">
+          <uxv:FormPane id="ENrKgmUwtSmDHxou2ZDHwl" isCollapsible="true">
+            <base:PropertyBag id="72gY91rBaxcwBxjdJUlk_A">
+              <base:Property id="DykAUwjlb9WgOxhzzTYDZv" name="Name" value="FormPane" />
+            </base:PropertyBag>
+            <uxv:SectionGroup id="DtXu2WmKMHAo2BgyekOgU9" column="0" row="0" showGroupName="true">
+              <base:PropertyBag id="LvsUe0GRjXHuXd8eozf9W9">
+                <base:Property id="wZVoM_tC$iZr0rQiopb2J4" name="Navigation" value="" />
+              </base:PropertyBag>
+              <uxv:SectionGroupName id="pQQVGg8ur6vhJhZMfwLRke" extPoolId="XNzQs4Lsqun5Dov3r5tA9p" />
+                            <uxv:SectionGroupItem id="JzkonTHN4EKALHNq86FIXw">
+                <base:PropertyBag id="BIFasgpKF0CN2tAOp6dCfg">
+                  <base:Property id="qAkpFCYQDUyHgAZIKAUoIQ" name="Name" value="StatusSchemaName" />
+                </base:PropertyBag>
+                <uxv:Label id="j_HBKcwcm0Sv39qzhK7Pmg" textPoolId="QHaBKCqAFEavqetDNMmDqw">
+                  <base:PropertyBag id="buP8eRUiQUSUphHCZ2cM0w">
+                    <base:Property id="OH8nJJKIikyvVj9sQRYDZA" name="Name" value="StatusSchemaName" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:InputField id="mAR7fH9U7UWJjR20FPauzw" name="StatusSchemaName" cctsType="identifier">
+									<uxv:IdentifierCCTSConfig id="Lkj5i7ZPuUWkXbLZGXSyLQ" interpretAsInteger="false" />
+									
+									<uxv:Value id="X7WbV3FoKkKdp4mVjtPvjg" bindingExpression="/Root/Pricing_Portal/StatusSchemaName">
+										<!-- <base:PropertyBag id="z8MNtLqnnE_SnAlpFWCa2w">
+											<base:Property id="ap86iDhpBkOO2a1Gr_icgg" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:InputField>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="exaKGf4i00u1jYjC_foesQ">
+                <base:PropertyBag id="zgDXfwtIq0uYKFffkTcScA">
+                  <base:Property id="ldtiwr7g_0W6LaUvz6UdzQ" name="Name" value="PricingID" />
+                </base:PropertyBag>
+                <uxv:Label id="F7Su4wlHpEKH0l9BM5H5Kw" textPoolId="jXrdFiXiRkCW549Fs5uKsA">
+                  <base:PropertyBag id="I1ZtZvM8sU6qR_Sz_Ff_Aw">
+                    <base:Property id="oN7kGZMCOUaE4nCLofoE4Q" name="Name" value="PricingID" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:Link id="fBn5E1XWX02A8Pr3EeCPzQ" name="PricingID" cctsType="identifier" headerType="PrimaryTitle">
+									<uxv:IdentifierCCTSConfig id="OOv_bhwKwEit3gK5AlJXIg" interpretAsInteger="false" />
+									
+									<uxv:Text id="dorW7XwXJUKRTNCbx2k3iw" bindingExpression="/Root/Pricing_Portal/PricingID"/>
+									<uxv:AllowEdit id="2iaRbrgfI0i54muikSVpxQ" fallbackValue="false" fallbackValueType="boolean"/>
+									</uxv:Link>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="siM_7hWc2UasZFcwk0YH1A">
+                <base:PropertyBag id="dEAhVwWPoU_dpPH3HfflqA">
+                  <base:Property id="8qSqMQ_cok_QOHyXpAqumA" name="Name" value="Combination" />
+                </base:PropertyBag>
+                <uxv:Label id="2_zEWMlEoU6JjKxbpXyLsA" textPoolId="Hl9ad5Mv6Uq0pFYAoA_08A">
+                  <base:PropertyBag id="2gN7kl1qJEaRdhwnn0v5Ow">
+                    <base:Property id="pMsGAWDDNUGE_B1osJHHtA" name="Name" value="Combination" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:DropDownListBox id="ERUq1wVpT0qdyvl7yRvubQ" name="Combination" cctsType="code">
+									<uxv:CodeCCTSConfig id="OopRA4kOfkqesQmiE4Hqag" />
+									
+									<uxv:Value id="Sq2Je_1sGECZdJNKWnqdkA" bindingExpression="/Root/Pricing_Portal/Combination">
+										<!-- <base:PropertyBag id="6kCvIkPl5UCzSxij15ubcw">
+											<base:Property id="DYgi4PMaeES9m1Cj4LMeRg" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:DropDownListBox>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="2tgn4n5m_kO00_RZETun9A">
+                <base:PropertyBag id="4sZTAVul4kqcqbbfi36cEg">
+                  <base:Property id="kpFCTBJ5b0CzgncavlBSUA" name="Name" value="Status" />
+                </base:PropertyBag>
+                <uxv:Label id="CkHqYDd4c0WBmDdFvgJLyg" textPoolId="fknea0L_5EWVIj5gwUKhUA">
+                  <base:PropertyBag id="1IADfVjuGECOfQOXhqSvuw">
+                    <base:Property id="5bRPTQEI1UaGMiYLKSpsPw" name="Name" value="Status" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:DropDownListBox id="9am6asq1vUCZGIPp0f4JPg" name="Status" cctsType="code">
+									<uxv:CodeCCTSConfig id="8X2mepEyhkq3GWQe6J8Klg" />
+									
+									<uxv:Value id="vy6V6FDq6EGzf2oTMsykIw" bindingExpression="/Root/Pricing_Portal/Status">
+										<!-- <base:PropertyBag id="EzFGfg_cCUmB_J9SIBCJBw">
+											<base:Property id="WAqejNLAg0Oj0GlmkRj8Bg" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:DropDownListBox>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="ju9Yw_Qxw0qNcJSlpJh1UQ">
+                <base:PropertyBag id="YSGELL2EykOry0nBVE7SRA">
+                  <base:Property id="aW2c61_cYk6ARbekE7_Kpg" name="Name" value="Type" />
+                </base:PropertyBag>
+                <uxv:Label id="64kQHJzkoUKxG0HP069tww" textPoolId="tW1SYum04kSBKk5fo9FyFw">
+                  <base:PropertyBag id="Wo7_mkEKcE6ESRcKESkPwg">
+                    <base:Property id="tkcodSpHZESjPy6obAnmxg" name="Name" value="Type" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:DropDownListBox id="r638N6rAOUyRLmtXOU4XLA" name="Type" cctsType="code">
+									<uxv:CodeCCTSConfig id="jYTU7663s0Oihuz1bWeYMg" />
+									
+									<uxv:Value id="rp891ngfvEi7dEB6nhxhrQ" bindingExpression="/Root/Pricing_Portal/Type">
+										<!-- <base:PropertyBag id="YbDqpkkv_0CG8fjoA9Cbiw">
+											<base:Property id="HAofV22Ka0OxRaQnVo7MnA" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:DropDownListBox>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="u19pmAgYzk6ziayKZOON_g">
+                <base:PropertyBag id="FygT3rh6vE2I1_60Zkvs9A">
+                  <base:Property id="4tSYMWRdWEaQ0vaZRxTpdg" name="Name" value="AccountManager" />
+                </base:PropertyBag>
+                <uxv:Label id="tDHsrjkeVkyDm1L0agtBTw" textPoolId="8e51695XCkikekAvZy43Ag">
+                  <base:PropertyBag id="_NH81rkNSUWyqUQBnFcKrA">
+                    <base:Property id="043I2jnfgU60wCnTA1TBTg" name="Name" value="AccountManager" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:InputField id="cTerg7b4VECMjsCx5kCALA" name="AccountManager" cctsType="identifier">
+									<uxv:IdentifierCCTSConfig id="T6TreIwmn0CwjJ3okUSnrg" interpretAsInteger="false" />
+									
+									<uxv:Value id="VHRM7aqWWEO1y75bGt69ew" bindingExpression="/Root/Pricing_Portal/AccountManager">
+										<!-- <base:PropertyBag id="PcyOxbA1SUKmh9peZFykew">
+											<base:Property id="yy2f7Y1UAkiE79f5tk_fYw" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:InputField>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="4R3BygF0XUejByFLT3JTnQ">
+                <base:PropertyBag id="Ee4taDrwS0m85orV2t1gqg">
+                  <base:Property id="aEnw9hGwK0Kyxe2yIltzLQ" name="Name" value="Manager" />
+                </base:PropertyBag>
+                <uxv:Label id="3wXd0UjiSkuNaWEYusn9pQ" textPoolId="p0GKPRlTFUWgpj70bbcOcw">
+                  <base:PropertyBag id="m2QmyPSToUGJsG_nmRlckg">
+                    <base:Property id="AxouK3x34EOrRed0QeCj_Q" name="Name" value="Manager" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:InputField id="UpFVg0xQXEW8Pu8t81ZqUA" name="Manager" cctsType="identifier">
+									<uxv:IdentifierCCTSConfig id="1HXdRcVAOkKMylf_HhEgOg" interpretAsInteger="false" />
+									
+									<uxv:Value id="91dpP217akO0u29Hndzzsw" bindingExpression="/Root/Pricing_Portal/Manager">
+										<!-- <base:PropertyBag id="aQME6unRqUaQx_7VPZBuKg">
+											<base:Property id="ndOVfQ0TaE_fwUQW_wCkcg" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:InputField>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="diDkoT0AFUS9DJTPOqQTuA">
+                <base:PropertyBag id="PJ3bEOOWi06JT2ETUvTZNQ">
+                  <base:Property id="Ayyu1hYHbUeHKvF4ZojDrA" name="Name" value="Requester" />
+                </base:PropertyBag>
+                <uxv:Label id="BfAs6Xi7mkS7lFAaJtvjwg" textPoolId="3gayawCaWEWnkUDh68_isw">
+                  <base:PropertyBag id="AWM4G1wUnkKOcoVEH9CZxw">
+                    <base:Property id="G219AtWoLUOhcHdEXhygdA" name="Name" value="Requester" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:InputField id="2xADq_bB6EO1PYBm91_ULA" name="Requester" cctsType="identifier">
+									<uxv:IdentifierCCTSConfig id="jnrxJAjAskKFgMHOqNi1cQ" interpretAsInteger="false" />
+									
+									<uxv:Value id="6oQofPvx6Emu09KEFyqv_g" bindingExpression="/Root/Pricing_Portal/Requester">
+										<!-- <base:PropertyBag id="iOPkjgwa2kS99NJyYEDvmg">
+											<base:Property id="w7D9SAsyMUGSQZS4Ej6XDA" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:InputField>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="HtW14viXS0WhTRlUKOzG_w">
+                <base:PropertyBag id="q42_p2U6xE_qj9wAht9BvQ">
+                  <base:Property id="XDensAMuJkODWo8xws0XZQ" name="Name" value="StartDate" />
+                </base:PropertyBag>
+                <uxv:Label id="o6UYVzwgBUyc0OvUDrmiag" textPoolId="SFF2UHT2ZEquoXHu9X79JA">
+                  <base:PropertyBag id="u3g2dK9TDESMhZs2dOPFxA">
+                    <base:Property id="vBxjrrHlUE29ABWBdaQsng" name="Name" value="StartDate" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:InputField id="76aaxoon4UCpulB_CzUg7A" name="StartDate" cctsType="date">
+									<uxv:DateCCTSConfig id="S4V8r3OQT0Wh6HiTZxJ_Bw" />
+									
+									
+									<uxv:Value id="6a2qpgl2XU_f7PJu_6DTvA" bindingExpression="/Root/Pricing_Portal/StartDate">
+										<!-- <base:PropertyBag id="z5RZ7YbJREqZIMKiLvUB2w">
+											<base:Property id="gjN657MYoU6eHj9UEZGraQ" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:InputField>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="vJkdaPFCqU_Sffv02KogJw">
+                <base:PropertyBag id="a61FvLGrckaYRkSMMGnG7w">
+                  <base:Property id="Vi88gvLtVEOKgSTo2Ksx5A" name="Name" value="EndDate" />
+                </base:PropertyBag>
+                <uxv:Label id="N4zjXl6hR0WNSgeXAluXSg" textPoolId="F0AqvFIcvkCWlKCzEK6JCQ">
+                  <base:PropertyBag id="VFjZJ5v8y0279XgKcZqr9g">
+                    <base:Property id="A5bBYqqxBEGiw1Shuhefzg" name="Name" value="EndDate" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:InputField id="4yf4HGn3HkCQYSZjFcDKkw" name="EndDate" cctsType="date">
+									<uxv:DateCCTSConfig id="gQ8mzvRvmEqcGsOyZoW7GQ" />
+									
+									
+									<uxv:Value id="PYahxNuqNUeT8kM6_K7L7g" bindingExpression="/Root/Pricing_Portal/EndDate">
+										<!-- <base:PropertyBag id="dk3MSbOV2E24VYHx1Z9hAw">
+											<base:Property id="JQuWsUrrmEWm3t19yWCNbA" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:InputField>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="UtAY0279sE_r5eCtbPzZdQ">
+                <base:PropertyBag id="UyQvUFUEO0GN1hir2SWW0g">
+                  <base:Property id="BZVOjVMYE0C8i6BVudHzJg" name="Name" value="Duration" />
+                </base:PropertyBag>
+                <uxv:Label id="mNxmfTkRSEOttl1grdgFfQ" textPoolId="TqKeABeCCUWU7_qWn03GgQ">
+                  <base:PropertyBag id="dufCnuYD8kefYdDVLIFXWA">
+                    <base:Property id="AzUzzQGXWEy0nSBhA6A9qg" name="Name" value="Duration" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:InputField id="KK0NW_R0rEOXA9iaKK4y6w" name="Duration" cctsType="value">
+									
+									<uxv:Value id="qvVspsy2YkKASnypUC1QvQ" bindingExpression="/Root/Pricing_Portal/Duration">
+										<!-- <base:PropertyBag id="47mVa3BlcEugkm7LVMpR2A">
+											<base:Property id="ObUr2LPP_0e2T7NIPBEG4A" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:InputField>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="vPDJ71IUakaEfx5G7sUurQ">
+                <base:PropertyBag id="cdSQOMe3gkeqFzBMbXBFYA">
+                  <base:Property id="Cnvi4tgF9U_Ouxt3dJ7dsQ" name="Name" value="SalesOrganization" />
+                </base:PropertyBag>
+                <uxv:Label id="t2FdnOL94Umckj_ed3p2Aw" textPoolId="cRyUTHzfUkmQe2YT3t22fw">
+                  <base:PropertyBag id="o5VrQcS580ulARiN1HStwg">
+                    <base:Property id="fLYvL3BJ2EaQhCB0c3dOKw" name="Name" value="SalesOrganization" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:InputField id="YvCPS7WRcUSqw0abNA2T0A" name="SalesOrganization" cctsType="identifier">
+									<uxv:IdentifierCCTSConfig id="l2b3N_eoGkaBMAIoZYMaHA" interpretAsInteger="false" />
+									
+									<uxv:Value id="jpADkPWoHEajpdfOz4xFKw" bindingExpression="/Root/Pricing_Portal/SalesOrganization">
+										<!-- <base:PropertyBag id="NxEyeVv67kelyBtHP5CApw">
+											<base:Property id="2QuGlozECk_CLUR_Zm6Enw" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:InputField>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="ySjnh5xY2kaJ7qveKXUhtQ">
+                <base:PropertyBag id="SwFXsqd9Z0idKXuv7RBMyw">
+                  <base:Property id="jxClfJpYZU68V9ZMbLLH5Q" name="Name" value="Primary_Approver" />
+                </base:PropertyBag>
+                <uxv:Label id="S9BXOgIhOUemskgu0ox84g" textPoolId="wjaSlVCxrkCKtAnPcUnN7g">
+                  <base:PropertyBag id="QAD6apael0Cx8DBaKZaxRg">
+                    <base:Property id="AfHWcB6ho0Kw7gRxz9b3yg" name="Name" value="Primary_Approver" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:InputField id="KwApA37R00SlLRdWI9UoOQ" name="Primary_Approver" cctsType="identifier">
+									<uxv:IdentifierCCTSConfig id="J5j2XnUY6kejpxMzt882cg" interpretAsInteger="false" />
+									
+									<uxv:Value id="UgL5pjL4QEiZ3wDtfjqWOw" bindingExpression="/Root/Pricing_Portal/Primary_Approver">
+										<!-- <base:PropertyBag id="mXa2BfiUi0Oyf5Vq4w1PXg">
+											<base:Property id="W88DX6cGwkm8FTnbJUTAzQ" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:InputField>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="wA7C5v_Gg0qUtn8T8oFA1g">
+                <base:PropertyBag id="Jk_FFwVCREybOHwcNtREKg">
+                  <base:Property id="I4SCJDBnakG5TrYZnoaPAA" name="Name" value="SoldToPartyID" />
+                </base:PropertyBag>
+                <uxv:Label id="b6VNspGs0kikkUGgFBRcwA" textPoolId="LDIdrltdH0ufto41vn4eqg">
+                  <base:PropertyBag id="zvsxuK9UWUWtM0mkONXePQ">
+                    <base:Property id="bP5aTrXSR0KvWuRg_KH1Tw" name="Name" value="SoldToPartyID" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:InputField id="NrAUbYK7zECyivCwJzhqQg" name="SoldToPartyID" cctsType="identifier">
+									<uxv:IdentifierCCTSConfig id="fPXKAL2rfEWM8cgdmkMsxQ" interpretAsInteger="false" />
+									
+									<uxv:Value id="z5L2LM6Bp0eGKf39SlZH0w" bindingExpression="/Root/Pricing_Portal/SoldToPartyID">
+										<!-- <base:PropertyBag id="p7572dT6YE69NDBrKxBXLg">
+											<base:Property id="W3QrHPw25UCOj1pOOJYofQ" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:InputField>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="9nFApAgdyk2wKKT84HMoNA">
+                <base:PropertyBag id="Iyd3DuIqSUS1PioPKpa2wg">
+                  <base:Property id="CxJ7QjkxkkShrHRunJNi0Q" name="Name" value="ShipToPartyID" />
+                </base:PropertyBag>
+                <uxv:Label id="AKC9UDBu0kSm_RR_9U32dw" textPoolId="rhgQXjR6A0OwJ0zbwHCRjw">
+                  <base:PropertyBag id="ETd2e8GOr0GW2dRzbKzLCg">
+                    <base:Property id="IX4T5Qf7FkKYnKGy0KGinA" name="Name" value="ShipToPartyID" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:InputField id="4jUnnxUNJE_1K85WHXeYLg" name="ShipToPartyID" cctsType="identifier">
+									<uxv:IdentifierCCTSConfig id="0EKvNeTPvEWONU2AfsloSw" interpretAsInteger="false" />
+									
+									<uxv:Value id="VvYPAZJw0EewoefrsA1WGQ" bindingExpression="/Root/Pricing_Portal/ShipToPartyID">
+										<!-- <base:PropertyBag id="q9mOpvL89E_92NCzGLr36A">
+											<base:Property id="WmEClQ2Mjkq2FyRezGNleg" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:InputField>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="67vsO7mZZUmQNyRAyKX_6w">
+                <base:PropertyBag id="IsdEdXRHAkGWIPzfvTxNgw">
+                  <base:Property id="KlHKkGga4kGabP7DfDOpLg" name="Name" value="MaterialID" />
+                </base:PropertyBag>
+                <uxv:Label id="CJDf3qr010y5KTEYSf2pGw" textPoolId="CMoBr5obukq4YqPwMmFVow">
+                  <base:PropertyBag id="SUTTiZBNzkqruSRupnE3Zw">
+                    <base:Property id="1mTLAmbBxE6eJsCpar3LJQ" name="Name" value="MaterialID" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:InputField id="Vf4CbBpxA0ycbWHViGtxOg" name="MaterialID" cctsType="identifier">
+									<uxv:IdentifierCCTSConfig id="niCIrPAcPUKkRNAUAJYgAw" interpretAsInteger="false" />
+									
+									<uxv:Value id="9lEAFXGLLkuNamrtSUofyA" bindingExpression="/Root/Pricing_Portal/MaterialID">
+										<!-- <base:PropertyBag id="8ItoEjOOS0qw9YxVxqXZJw">
+											<base:Property id="n4zk3oriyUGZI0DF7PVvtQ" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:InputField>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="BPx3BQtUl0qOMqRRJrfeGQ">
+                <base:PropertyBag id="AGC0v0umdUiJTMXZeE5mkg">
+                  <base:Property id="WoUI94JiQU69eivYNKwleQ" name="Name" value="ShippingCondition" />
+                </base:PropertyBag>
+                <uxv:Label id="mjAFiHyNVUGEiJxfwy9DqQ" textPoolId="8L_nKCs6fUW_X0ca5EbqEw">
+                  <base:PropertyBag id="hKl5W9YN9kuEGqyus8oTwQ">
+                    <base:Property id="SOGOv8gLZkyvLCgWOc93yg" name="Name" value="ShippingCondition" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:DropDownListBox id="7NYnMVHSa0yD0alKw3L_SA" name="ShippingCondition" cctsType="code">
+									<uxv:CodeCCTSConfig id="pCV5hL9N0kayfi46v_tqgQ" />
+									
+									<uxv:Value id="IJdTHR8gSk_w5oW8PIWszg" bindingExpression="/Root/Pricing_Portal/ShippingCondition">
+										<!-- <base:PropertyBag id="XwI8Dz6At0mWaBGIC3lLWQ">
+											<base:Property id="WS7bLbQMokK4aWH8pQvjhw" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:DropDownListBox>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="4JAaV4kxuUuiA1Ura2OmoQ">
+                <base:PropertyBag id="9l2WwACtJU2zvptpz3Lk8g">
+                  <base:Property id="q1B_KRNxckWsKN3_xhO9nQ" name="Name" value="CustomerConditionGroup" />
+                </base:PropertyBag>
+                <uxv:Label id="WgWU2I7_NUmHjpl21I6RDA" textPoolId="Bmfwu_7pb0KRide1OHANbg">
+                  <base:PropertyBag id="JCesgUQzeEe7NtXjK6wCoQ">
+                    <base:Property id="PW01o2XMgEKhM01yvuzoww" name="Name" value="CustomerConditionGroup" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:DropDownListBox id="4nuAGK04J0upkDYy06mcjw" name="CustomerConditionGroup" cctsType="code">
+									<uxv:CodeCCTSConfig id="PFF_6iuJtUen3oA0ozgw0w" />
+									
+									<uxv:Value id="ynXbKCkQtUOsQIiTT54viQ" bindingExpression="/Root/Pricing_Portal/CustomerConditionGroup">
+										<!-- <base:PropertyBag id="CGiD0OkzZEGCLAqIdKue_w">
+											<base:Property id="k6NWNinzZ0y3BciPi1X3Sw" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:DropDownListBox>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="B3lTKbJtAEOJz4kpH6i1sg">
+                <base:PropertyBag id="B0RfOwpDNUGqd0k4WwRbIQ">
+                  <base:Property id="xBZKIZjKyUK6PJH1lnKrXw" name="Name" value="Incoterm" />
+                </base:PropertyBag>
+                <uxv:Label id="hOZV36aNzEuTI8zTahpxYw" textPoolId="eylPRgVyXkGKYrcABZvAXw">
+                  <base:PropertyBag id="C4VEAjkKmkWD_NvNwrLj0g">
+                    <base:Property id="w8ECudY_k0WESBto65AdnA" name="Name" value="Incoterm" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:DropDownListBox id="byHRtf3AU02exyFVkuEgiw" name="Incoterm" cctsType="code">
+									<uxv:CodeCCTSConfig id="1cMBhnbTAk6l3xnfo3tPbQ" />
+									
+									<uxv:Value id="P35PgwEmnEuxqtYNAtIDHg" bindingExpression="/Root/Pricing_Portal/Incoterm">
+										<!-- <base:PropertyBag id="IsGBmMrPbEK3XAw8pciXuQ">
+											<base:Property id="gL6mkioAbU691d6AT2USgw" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:DropDownListBox>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="bK8jVEKVnEOGATak7cSkuQ">
+                <base:PropertyBag id="Bia72r6zpE_phaWcDjmhCA">
+                  <base:Property id="CIIN4KTO70SX269MpzdJrg" name="Name" value="Quantity" />
+                </base:PropertyBag>
+                <uxv:Label id="JRdnv4at0UaHt2GmaVSy1A" textPoolId="ghYbLFT9q0KsGOIVAsua1g">
+                  <base:PropertyBag id="U0YH5jHHE0eSIraGgH1E3A">
+                    <base:Property id="ThL4RDO6zEqkjdyaJ3FnDg" name="Name" value="Quantity" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:CompoundField id="nuU3poP_60q_7TqN78zc1Q" name="Quantity" cctsType="quantity" structureBinding="/Root/Pricing_Portal/Quantity">
+									<uxv:InputField id="1g9ZPbkPq0CK5AkPg0fyvw" name="content" cctsType="quantity">
+										
+										<uxv:Value id="_3LWZvOXAUOqECrr16HIyQ" bindingExpression="/Root/Pricing_Portal/Quantity/content">
+											<!-- <base:PropertyBag id="Q_zvtbOAjUSW3zniBWNipQ">
+												<base:Property id="aKiAFnC7N0qWM9RR5CWOQQ" name="Name" value="" />
+											</base:PropertyBag> -->
+										</uxv:Value>
+										</uxv:InputField>
+									<uxv:DropDownListBox id="wMiMORwdbkSZq1LxRhwOdg" name="unitCode" cctsType="code">
+										<uxv:CodeCCTSConfig id="tBBERzqUnUOmNlM5yWlM3Q" />
+										
+										<uxv:Value id="u2UAP7nrM0q7NUNLr7Tibg" bindingExpression="/Root/Pricing_Portal/Quantity/unitCode">
+											<!-- <base:PropertyBag id="0PUlzcIkS0Cs48IDsoXm_g">
+												<base:Property id="rrkkahgoWkm1fAuBBt4SlQ" name="Name" value="" />
+											</base:PropertyBag> -->
+										</uxv:Value>
+										</uxv:DropDownListBox>
+								</uxv:CompoundField>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="tkB38pOeiEOE7z0teLGEhA">
+                <base:PropertyBag id="ZBlMTiAZvE2lS7gqskxuMw">
+                  <base:Property id="OMLItkMsK0GW3au6YIsy0A" name="Name" value="PriceAmount" />
+                </base:PropertyBag>
+                <uxv:Label id="lHhbjwY4zkyKdZwNRm5ADg" textPoolId="3khOYqao8kCCSmTyuY9JkA">
+                  <base:PropertyBag id="MJB70dtuvEa9bhrLb5DHvA">
+                    <base:Property id="mBlOljDMGUqKbLC0ZFVc6w" name="Name" value="PriceAmount" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:CompoundField id="A0SJEhjhqEuszGSmZlfekg" name="PriceAmount" cctsType="amount" structureBinding="/Root/Pricing_Portal/PriceAmount">
+									<uxv:InputField id="ncPCvBAeMUKJmdez0Kta7w" name="content" cctsType="amount">
+										
+										<uxv:Value id="5CkAArYP2kq62AhbQWEgfQ" bindingExpression="/Root/Pricing_Portal/PriceAmount/content">
+											<!-- <base:PropertyBag id="6bIraKHrrEmVCnl6mugMfQ">
+												<base:Property id="DUr6R0WIVkeadg0_B1rUcg" name="Name" value="" />
+											</base:PropertyBag> -->
+										</uxv:Value>
+										</uxv:InputField>
+									<uxv:DropDownListBox id="4SxqIk6CdUSfSFr05aKotw" name="currencyCode" cctsType="code">
+										<uxv:CodeCCTSConfig id="Ygt5PXr7W0SoTUFl0km9Rg" />
+										
+										<uxv:Value id="JJvrB353vUyoQGNfl7JErA" bindingExpression="/Root/Pricing_Portal/PriceAmount/currencyCode">
+											<!-- <base:PropertyBag id="wSdCv4JuukqD5oQtfjInLA">
+												<base:Property id="elKi2fL5J0iE6oJ84S197g" name="Name" value="" />
+											</base:PropertyBag> -->
+										</uxv:Value>
+										</uxv:DropDownListBox>
+								</uxv:CompoundField>
+              </uxv:SectionGroupItem>
+                            <uxv:SectionGroupItem id="511FcOHGvU28rJpgySWDww">
+                <base:PropertyBag id="c2ZsQoq_GUK2JDBzrh99tg">
+                  <base:Property id="zhRa5dDzzkiqBNC9gGYuAg" name="Name" value="ApprovalStatus" />
+                </base:PropertyBag>
+                <uxv:Label id="qbL8lGOi2Eea3qVf92KYgA" textPoolId="Vwq5iK1T2kODVjWfYgtHng">
+                  <base:PropertyBag id="OLAakvaK_06y__KCQzGNjA">
+                    <base:Property id="pRK3lbWbLESAApT9K66pTA" name="Name" value="ApprovalStatus" />
+                  </base:PropertyBag>
+                </uxv:Label>
+                <uxv:DropDownListBox id="wIHfuZ4RFEOtXnmwyb4Peg" name="ApprovalStatus" cctsType="code">
+									<uxv:CodeCCTSConfig id="5fUBla1c_EODg47GDuy4yw" />
+									
+									<uxv:Value id="9DwJPgr0g0OdhPnXikZSWQ" bindingExpression="/Root/Pricing_Portal/ApprovalStatus">
+										<!-- <base:PropertyBag id="r3YjDMQMLk_yXD6U5nTAFA">
+											<base:Property id="um7Yr8dICEurAQdaqJ7BBA" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:DropDownListBox>
+              </uxv:SectionGroupItem>
+                          </uxv:SectionGroup>
+          </uxv:FormPane>
+        </uxv:PaneContainer>
+      </uxv:ExtendedContentRegion>
+    </uxv:ThingHeaderRegion>
+    <uxv:ContextualNavigationRegion id="HSKXgLmZ10SDCpLigA6HQQ">
+      <uxv:ViewSwitchNavigation id="HHClcoe0DUOXyoP85Txp2Q">
+        <uxv:NavigationItem id="ZYZGQumi1kGJwy91Ni1QIw" navigationItemId="NavigationItem">
+          <base:PropertyBag id="6Px4E51zC0a5QENEGYAuQA">
+            <base:Property id="IzU41lzK70OpWMg3nRg6BQ" name="Name" value="NavigationItem" />
+          </base:PropertyBag>
+          <uxv:Title id="2cGTuJ5LnkatWvhXnshx3Q" textPoolId="1c6dbd827ce248b4992fac68439bcf41" />
+        </uxv:NavigationItem>
+        <uxv:SelectedNavigationItemId id="Y1ATbO202E2erDk1vWAbpQ" bindingExpression="/Root/UIState1/ViewSwitchSelectedItem" />
+        <!--<uxv:StableAnchor type="ViewSwitchNavigationAnchor" xrepPath="" release="">
+          <TargetFile xmlns="http://www.sap.com/a1s/cd/oberon/uimodelchange-1.0" />
+        </uxv:StableAnchor>-->
+      </uxv:ViewSwitchNavigation>
+    </uxv:ContextualNavigationRegion>
+    <uxv:ViewContainerRegion id="i8ByrHtHSf07geR2d_CFOo">
+      <uxv:View id="8PoFdrvgb72k9$GK8aqDFk" columns="1" rows="4" navigationItemId="NavigationItem">
+      </uxv:View>
+      <uxv:View id="OMkeU$1RBJvaZOhM0zJlMa" columns="1" rows="1" navigationItemId="NavigationItem1">
+      </uxv:View>
+    </uxv:ViewContainerRegion>
+  </UXView>
+  
+  <TextPool>
+    <base:TextBlock language="EN" masterLanguage="true" currentLanguage="true">
+      <base:TextPoolEntry id="n8T6100P6EaqRLtrz5FJ1A" textUuid="6d78ba4a44ee4825b05ae0b8f3c8692b" text="Pricing_Portal" textCategory="XTIT" />
+      <base:TextPoolEntry id="caBtHJSeWUyfAHqh0VVyKA" textUuid="76fbb966af4e4d3286917a85952d50b9" text="Primary Text" />
+      <base:TextPoolEntry id="ag6WkAYz6EymuSsV_cO1Zg" textUuid="ce0df2a204704609a26d6859b1987bfc" text="Secondary Text" />
+      <base:TextPoolEntry id="4pYSDq8SZ0q8V8hj1FbOIA" textUuid="1c6dbd827ce248b4992fac68439bcf41" text="Summary" />
+                <base:TextPoolEntry id="QIOFmyGsPUqZvSveQ2kagA" textUuid="QHaBKCqAFEavqetDNMmDqw" text="StatusSchemaName" />
+                <base:TextPoolEntry id="HjwildYuA0O2EYNKV04R9Q" textUuid="jXrdFiXiRkCW549Fs5uKsA" text="Pricing ID" esrTextId="YTFS8S0TY_8E92A0A6E84C3C57" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="FkOI0wbP_EqG8MFFvaHl_Q" textUuid="Hl9ad5Mv6Uq0pFYAoA_08A" text="Combination Type" esrTextId="YTFS8S0TY_A6A9C472B21074D7" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="21Wp6pI6xkyadVbl4a503Q" textUuid="fknea0L_5EWVIj5gwUKhUA" text="Status" esrTextId="YTFS8S0TY_5723968A11E26F71" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="PfzDQLV_NkCITgnuJdNOSA" textUuid="tW1SYum04kSBKk5fo9FyFw" text="Type" esrTextId="YTFS8S0TY_B450F952CEF925BE" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="Vrf2_KJjSUGsuEEq3wplNA" textUuid="8e51695XCkikekAvZy43Ag" text="Account Manager" esrTextId="YTFS8S0TY_1CA9CA82F1DDCC23" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="VumDdmsyoUebaKLK2iwyeA" textUuid="p0GKPRlTFUWgpj70bbcOcw" text="Manager" esrTextId="YTFS8S0TY_19305F822BB102F8" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="GLf0OKBphE_mAS_48_0Bxg" textUuid="3gayawCaWEWnkUDh68_isw" text="Requester" esrTextId="YTFS8S0TY_C519BD2206D20719" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="SVRRu5Y0OkOWJFuwXqoyCA" textUuid="SFF2UHT2ZEquoXHu9X79JA" text="Start Date" esrTextId="YTFS8S0TY_4173B184108F747A" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="0T5bkISGQEeAy6QukLVxog" textUuid="F0AqvFIcvkCWlKCzEK6JCQ" text="End Date" esrTextId="YTFS8S0TY_1BCC39667B4A7D3A" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="qNGeynHoJU_ea3noLrwLbA" textUuid="TqKeABeCCUWU7_qWn03GgQ" text="Duration" esrTextId="YTFS8S0TY_80A5FE1C29A2516C" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="2BRhWEU4sUKV_72HXrlIsA" textUuid="cRyUTHzfUkmQe2YT3t22fw" text="Sales Organization" esrTextId="YTFS8S0TY_06E1E23A889F5230" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="WLdGGmtyPEu4ZaWYW8Q7mg" textUuid="wjaSlVCxrkCKtAnPcUnN7g" text="Primary Approver" esrTextId="YTFS8S0TY_CF3D04832EEFB266" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="nRtSQyj6jEmFsFNtouyrJw" textUuid="LDIdrltdH0ufto41vn4eqg" text="Sold-To Party" esrTextId="YTFS8S0TY_AEE5C1F2A3B131AC" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="dXhnjeTzJkuGifeuR9L5Zw" textUuid="rhgQXjR6A0OwJ0zbwHCRjw" text="Ship-To Party" esrTextId="YTFS8S0TY_C8EBDD45AFBD708A" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="l2P9Wv1e40uWer7OF8H0tQ" textUuid="CMoBr5obukq4YqPwMmFVow" text="Material" esrTextId="YTFS8S0TY_9115AE6235FB5F6F" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="Y8O0GTEVA0qxHABn_kn0MQ" textUuid="8L_nKCs6fUW_X0ca5EbqEw" text="Shipping Condition" esrTextId="YTFS8S0TY_0CF1C9AB426EA1F0" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="W3AJmUdIdUaiFCBPkfeuGA" textUuid="Bmfwu_7pb0KRide1OHANbg" text="Customer Condition Group" esrTextId="YTFS8S0TY_FE595951530EEAE1" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="rRyXsW4d2EqTNNME61AhNA" textUuid="eylPRgVyXkGKYrcABZvAXw" text="Incoterm" esrTextId="YTFS8S0TY_0D7455130D8055B3" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="ILF9Ip50VEG7lQmeMpuikg" textUuid="ghYbLFT9q0KsGOIVAsua1g" text="Quantity" esrTextId="YTFS8S0TY_87C03057F6AA086E" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="7AOSPgFnzkqxfXwCf7Kusw" textUuid="1UNbYwJWhE6PfjxEMaYZkA" text="Quantity" esrTextId="YTFS8S0TY_87C03057F6AA086E" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="ICSlpyvklUSq7v39Ruh2ew" textUuid="Xwwmw_yZw0aEwz7oii8OvA" text="unitCode" />
+                <base:TextPoolEntry id="fQ8HjOCP2k2lODhPjZxHYQ" textUuid="3khOYqao8kCCSmTyuY9JkA" text="Price Amount" esrTextId="YTFS8S0TY_10FF6DD4E5173E64" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="6EqXqk_CvEyEJy36tU9ZqQ" textUuid="NZu9dwuQx0eqUmd5963HAA" text="Price Amount" esrTextId="YTFS8S0TY_10FF6DD4E5173E64" esrTextCategory="XFLD" textCategory="XFLD" />
+                <base:TextPoolEntry id="d_hRw8qjKUauJfhznqLjLw" textUuid="f_kVkL9h1kGWQ0lx1J14zA" text="currencyCode" />
+                <base:TextPoolEntry id="nPtBJUevDka5BKzg7VfA2g" textUuid="Vwq5iK1T2kODVjWfYgtHng" text="ApprovalStatus" />
+            </base:TextBlock>
+  </TextPool>
+  <enableViewEdit id="h3lG_kLvxV3Ic$Q4XH75iR" fallbackValueType="boolean" fallbackValue="true"/>
+</UXComponent>

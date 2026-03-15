@@ -1,0 +1,11 @@
+﻿import AP.Common.GDT;
+import BASIS.Global;
+import ABSL;
+this.Dummy_Date = Context.GetCurrentSystemDate();
+// 1. Get current system date
+if(this.Dummy_Date.GreaterEquals(this.EndDate)){
+	this.Duration=0;
+	this.Status = "5";
+}else{
+	this.Duration = this.Dummy_Date.Delta(this.EndDate).ConvertToDays();
+}
