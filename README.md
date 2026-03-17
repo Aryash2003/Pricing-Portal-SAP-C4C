@@ -1,6 +1,6 @@
 # Qnovate Pricing Portal — SAP Cloud for Customer (C4C)
 
-> A duration-based customer pricing solution built on SAP C4C for Miele, featuring structured approval workflows, time-bound validity enforcement, PDF export, and full audit trail tracking.
+> A duration-based customer pricing solution built on SAP C4C, featuring structured approval workflows, time-bound validity enforcement, PDF export, and full audit trail tracking.
 
 ---
 
@@ -24,7 +24,7 @@
 
 ## Overview
 
-The **Qnovate Pricing Portal** is a custom SAP Cloud for Customer (C4C) extension built for Miele. It provides sales teams with a single, structured interface to create, manage, and approve customer-specific pricing agreements — without leaving the SAP ecosystem.
+The **Qnovate Pricing Portal** is a custom SAP Cloud for Customer (C4C) extension built for . It provides sales teams with a single, structured interface to create, manage, and approve customer-specific pricing agreements — without leaving the SAP ecosystem.
 
 Key business problems solved:
 
